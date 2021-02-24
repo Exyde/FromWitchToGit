@@ -10,6 +10,9 @@ public class FPSController : MonoBehaviour
     [Header("Inputs")]
     public KeyCode RunKey = KeyCode.LeftShift;
 
+    [SerializeField]
+    private MovementDatas moveDatas;
+
     [Header ("Speeds")]
     [Range (5, 10)]
     public float walkingSpeed = 7.5f;
@@ -39,6 +42,7 @@ public class FPSController : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+
 
         //Cursor
         Cursor.lockState = CursorLockMode.Locked;

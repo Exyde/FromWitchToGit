@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class OffensiveSpell : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public GameObject impactVFX;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	bool collided = false;
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.tag != "Spell" && collision.gameObject.tag != "Player" && !collided)
+		{
+			collided = true;
+
+			var impact = Instantiate(impactVFX, collision.contacts[0].point, Quaternion.identity) as GameObject;
+
+			Destroy(impact, .25f);
+			Destroy(gameObject);
+		}
+	}
 }
