@@ -7,7 +7,7 @@ public class Crouch : MonoBehaviour
 {
     FPSController controller;
     CharacterController cc;
-
+    
     public KeyCode CrounchKey = KeyCode.C;
     public bool crouched = false;
 
