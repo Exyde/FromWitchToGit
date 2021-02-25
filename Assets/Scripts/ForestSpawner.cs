@@ -6,13 +6,12 @@ using UnityEngine;
 public class ForestSpawner : MonoBehaviour
 {
     public GameObject TreePrefab;
-
     public float gridSize = 10f;
     public float offset = 1f;
 
     void Start()
     {
-        GenerateForest();
+        //GenerateForest();
     }
 
 	private void Update()
@@ -22,9 +21,9 @@ public class ForestSpawner : MonoBehaviour
 			GenerateForest();
 		}
 	}
-	void GenerateForest()
+	public void GenerateForest()
 	{
-		ClearTransform();
+		ClearForest();
 
 		for (int i = 0; i < gridSize; i++)
 		{
@@ -32,11 +31,10 @@ public class ForestSpawner : MonoBehaviour
 			{
 				float randOffset = Random.Range(-2f, 2f);
 
-				Vector3 pos = new Vector3(i * offset + randOffset, 3 ,j * offset + randOffset);
-				Vector3 rot = new Vector3(270, 0, 0);
+				Vector3 pos = new Vector3(i * offset + randOffset, 0 ,j * offset + randOffset);
+				Vector3 rot = new Vector3(270, Random.Range(0, 360f), Random.Range(-10f, 10f));
 				float scale = Random.Range(.2f, 3f);
 				Vector3 randomScale = new Vector3(scale, scale, scale);
-
 
 				var tree = Instantiate(TreePrefab, pos, Quaternion.Euler(rot)) as GameObject;
 				tree.transform.localScale = randomScale;
@@ -45,13 +43,13 @@ public class ForestSpawner : MonoBehaviour
 		}
 	}
 
-	void ClearTransform()
+	public void ClearForest()
 	{
-		int i = transform.childCount;
+		int childs = transform.childCount;
 
-		for (int x = 0; x < i; x++)
+		for (int i = 0; i < childs; i++)
 		{
-			Destroy(transform.GetChild(i).gameObject);
+			DestroyImmediate(transform.GetChild(0).gameObject);
 		}
 	}
 }
