@@ -4,7 +4,7 @@ using UnityEngine;
 
 public  abstract class Spell : ScriptableObject
 {
-	//Never instantiaded
+	//Never instantiaded -- MLF :D
 	//Todo : Update with all the design things for our spells.
 	 
 	public string spellName = "New Spell";

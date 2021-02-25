@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpellShooter : MonoBehaviour
 {
+    //Todo : Refacto
     public GameObject spell;
     public Transform LFirePoint, RFirePoint;
     public Camera mainCam;

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Cheats : MonoBehaviour
 {
+
+    // Cheat Class : Remove for build
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))

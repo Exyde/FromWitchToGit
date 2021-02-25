@@ -6,10 +6,12 @@ using UnityEngine;
 public class MovementDatas : ScriptableObject
 {
     [Header("Speeds")]
-    [Range(5, 10)]
+    [Range(1, 10)]
     public float walkingSpeed = 7.5f;
-    [Range(8, 20)]
+    [Range(1, 20)]
     public float runningSpeed = 11.5f;
-    [Range(6, 10)]
+    [Range(1, 20)]
     public float jumpSpeed = 8.0f;
+    [Range(1, 10)]
+    public float crouchSpeed = 8.0f;
 }

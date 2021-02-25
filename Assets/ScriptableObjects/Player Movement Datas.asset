@@ -15,3 +15,4 @@ MonoBehaviour:
   walkingSpeed: 7.5
   runningSpeed: 11.5
   jumpSpeed: 8
+  crouchSpeed: 3.5

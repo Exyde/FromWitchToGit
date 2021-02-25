@@ -13,14 +13,6 @@ public class FPSController : MonoBehaviour
     [SerializeField]
     private MovementDatas moveDatas;
 
-    [Header ("Speeds")]
-    [Range (5, 10)]
-    public float walkingSpeed = 7.5f;
-    [Range(8, 20)]
-    public float runningSpeed = 11.5f;
-    [Range (6, 10)]
-    public float jumpSpeed = 8.0f;
-
     [Space]
     public float gravity = 20.0f;
 
@@ -33,16 +25,18 @@ public class FPSController : MonoBehaviour
     //[HideInInspector]
     public bool canMove = true;
     public bool showCursor = true;
-    #endregion
+	#endregion
 
-    CharacterController characterController;
+	#region Private Fields
+	CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
+	#endregion
 
-    void Start()
+	#region Unity Callback
+	void Start()
     {
         characterController = GetComponent<CharacterController>();
-
 
         //Cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -59,14 +53,14 @@ public class FPSController : MonoBehaviour
         bool isRunning = Input.GetKey(RunKey);
 
         //Compute Speed
-        float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+        float curSpeedX = canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
-            moveDirection.y = jumpSpeed;
+            moveDirection.y = moveDatas.jumpSpeed;
         }
         else
         {
@@ -91,5 +85,6 @@ public class FPSController : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
+	#endregion
 }
 
