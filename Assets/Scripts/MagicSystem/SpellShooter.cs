@@ -8,7 +8,7 @@ public class SpellShooter : MonoBehaviour
     public GameObject spell;
     public Transform LFirePoint, RFirePoint;
     public Camera mainCam;
-    public float projectileSpeed = 50f;
+    public float projectileSpeed = 10f;
     public float fireRate = 4f;
     public float arcRange = 1f;
 
