@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
-  m_Name: FirstMessage
+  m_Name: M3
   m_EditorClassIdentifier: 
-  message: "PNJ (H)\r\n\r\nBonjour. Je ne vous ai jamais vu auparavant. Etes vous
-    de la r\xE9gion ?"
+  message: "PNJ (H)\r\n\r\nha d'accord ! Vous \xEAtes originaire de l\xE0-bas ?"
   responses:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: eca7154da7365984591013841b7dbefb, type: 2}
+  - {fileID: 11400000, guid: 6f814077bb115f24884b238d54880940, type: 2}

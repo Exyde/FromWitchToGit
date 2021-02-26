@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "DialogueSystem/Dialogue", fileName = "New Dialogue")]
-public class Dialogue : ScriptableObject
+public class Dialogue : MonoBehaviour
 {
-	public Message[] dialogue;
+	public Message[] npcMessages;
+	public Response[] playerResponses;
+
+
 }

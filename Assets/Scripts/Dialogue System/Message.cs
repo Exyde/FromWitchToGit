@@ -10,4 +10,9 @@ public class Message : ScriptableObject
 	public string message;
 
 	public Response[] responses;
+
+	public void ShowMessage()
+	{
+		Debug.Log(message);
+	}
 }

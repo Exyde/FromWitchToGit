@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
-  m_Name: Reponse 2
+  m_Name: End_Bad
   m_EditorClassIdentifier: 
-  message: "R\xE9ponse 2\r\n\r\nJe viens de la capital. J'ai \xE9t\xE9 appel\xE9e
-    par la milice pour aider \xE0 r\xE9soudre l'enqu\xEAte."
+  message: "R\xE9sultat 1.1\r\n\r\nPNJ hostile et conversation rompue\r\n\r\nD\xE9nonciation
+    possible car suspecte"
   responses: []

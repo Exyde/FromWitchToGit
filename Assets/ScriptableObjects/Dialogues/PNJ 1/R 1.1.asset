@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
-  m_Name: Message 1
+  m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
+  m_Name: R 1.1
   m_EditorClassIdentifier: 
-  message: 
+  response: "R\xE9ponse 1\r\n\r\nC'est une question bien indiscr\xE8te Cela ne vous
+    regarde pas Monsieur."
+  nextMessage: {fileID: 11400000, guid: 5a437d91d92b60f4dadcdcbe2f96601d, type: 2}

@@ -7,6 +7,8 @@ public class Cheats : MonoBehaviour
 {
 
     public GameObject lg;
+
+    public MovementDatas moveDatas;
     // Cheat Class : Remove for build
     void Update()
     {
@@ -19,5 +21,15 @@ public class Cheats : MonoBehaviour
         {
             transform.position = lg.transform.position + new Vector3(2, 2, 2);
         }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+		{
+            ToggleMovement();
+		}
+    }
+
+    void ToggleMovement()
+	{
+            moveDatas.canMove = !moveDatas.canMove;
     }
 }
