@@ -16,6 +16,8 @@ public class DialogueManager : Interactable
     public Text npcNameText;
     public Text npcDialogueBox;
 
+    public Message startMessage;
+
     //Aura
     [Range (0, 100)]
     public float auraPct = 50f;
