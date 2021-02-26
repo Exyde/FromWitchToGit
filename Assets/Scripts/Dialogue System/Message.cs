@@ -8,4 +8,6 @@ public class Message : ScriptableObject
 {
 	[TextArea (3, 25)]
 	public string message;
+
+	public Response[] responses;
 }

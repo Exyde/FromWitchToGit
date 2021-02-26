@@ -3,59 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : Interactable
 {
-    //Current Dialogue Loaded. Can Changed.
-    //Can have multiple dialogue et switch it based on npcc current state
-    public NPC currentNPC;
+    public string npcName;
 
     bool isTalking = false;
-    float distance;
-    float curResponseTracker = 0;
 
     public GameObject player;
     public GameObject dialogueUI;
+    public MovementDatas moveDatas;
 
-    public Text npcName;
+    public Text npcNameText;
     public Text npcDialogueBox;
 
-    public Text[] playerReponses;
+    //Aura
+    [Range (0, 100)]
+    public float auraPct = 50f;
 
     void Start()
     {
         dialogueUI.SetActive(false);
     }
 
+    public override string GetDescription()
+    {
+        if (isTalking) return "";
+        return "Parler a " + npcName;
+    }
 
-    //Todo : Update with Raycast
-	private void OnMouseOver()
+	public override void Interact()
 	{
-        distance = Vector3.Distance(player.transform.position, this.transform.position);
-
-        if (distance <= 2.5f)
-		{
-            if (Input.GetKeyDown(KeyCode.E) && !isTalking)
-			{
-                BeginDialogue();
-			} else if (Input.GetKeyDown(KeyCode.E) && isTalking)
-			{
-                EndDialogue();
-			}
-
-        }
+        if (!isTalking) BeginDialogue();
+        else EndDialogue();
 	}
 
     void BeginDialogue()
 	{
+        moveDatas.canSpell = moveDatas.canMove = false;
         isTalking = true;
         dialogueUI.SetActive(true);
-        curResponseTracker = 0;
 	}
 
     void EndDialogue()
 	{
+        moveDatas.canSpell = moveDatas.canMove = true;
         isTalking = false;
         dialogueUI.SetActive(false);
-        //curResponseTracker = 0;
     }
 }

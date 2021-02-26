@@ -18,8 +18,12 @@ public class SpellShooter : MonoBehaviour
     private bool leftHand;
     private float timeToFire;
 
+    public MovementDatas moveDatas;
+
     void Update()
     {
+        if (!moveDatas.canSpell) return;
+
         //Spell 1
         if (Input.GetKey(KeyCode.Alpha1) && Time.time >= timeToFire)
 		{

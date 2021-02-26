@@ -5,6 +5,12 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "Datas/Movement Datas")]
 public class MovementDatas : ScriptableObject
 {
+
+    [Header("States")]
+    public bool canMove = true;
+    public bool canSpell = true;
+
+
     [Header("Speeds")]
     [Range(1, 10)]
     public float walkingSpeed = 7.5f;

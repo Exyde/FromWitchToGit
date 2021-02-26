@@ -23,8 +23,7 @@ public class FPSController : MonoBehaviour
 
     [Header ("Debug")]
     //[HideInInspector]
-    public bool canMove = true;
-    public bool showCursor = true;
+    public bool showCursor = false;
 	#endregion
 
 	#region Private Fields
@@ -53,12 +52,12 @@ public class FPSController : MonoBehaviour
         bool isRunning = Input.GetKey(RunKey);
 
         //Compute Speed
-        float curSpeedX = canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Horizontal") : 0;
+        float curSpeedX = moveDatas.canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = moveDatas.canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
+        if (Input.GetButton("Jump") && moveDatas.canMove && characterController.isGrounded)
         {
             moveDirection.y = moveDatas.jumpSpeed;
         }
@@ -77,7 +76,7 @@ public class FPSController : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
 
         // Player and Camera rotation
-        if (canMove)
+        if (moveDatas.canMove)
         {
             rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
