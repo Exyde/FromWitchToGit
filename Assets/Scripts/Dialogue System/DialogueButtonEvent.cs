@@ -6,10 +6,25 @@ using UnityEngine.EventSystems;
 
 public class DialogueButtonEvent : MonoBehaviour, IPointerClickHandler
 {
+
+	private DialogueManager dialogueManager;
     public UnityEvent onClick;
 
-    public void OnPointerClick(PointerEventData pointerEventData)
+    public Message nextMessage;
+
+	private void Start()
+	{
+		dialogueManager = GetComponentInParent<DialogueManager>();
+		print(dialogueManager.name);
+	}
+
+	public void OnPointerClick(PointerEventData pointerEventData)
     {
         onClick.Invoke();
     }
+
+    public void SetNextMessage()
+	{
+		dialogueManager.SetNextMessage(nextMessage);
+	}
 }

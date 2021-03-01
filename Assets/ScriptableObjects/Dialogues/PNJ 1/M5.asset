@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
   m_Name: M5
   m_EditorClassIdentifier: 
+  endDialogue: 1
   message: 'PNJ (H)
 
-    
+
 
     Vraiment ! C''est impressionnant ! Vous pouvez compter
     sur moi si vous avez besoin d''aide.'

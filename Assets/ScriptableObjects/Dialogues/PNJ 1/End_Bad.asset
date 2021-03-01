@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
   m_Name: End_Bad
   m_EditorClassIdentifier: 
+  endDialogue: 1
   message: "R\xE9sultat 1.1\r\n\r\nPNJ hostile et conversation rompue\r\n\r\nD\xE9nonciation
     possible car suspecte"
   responses: []
