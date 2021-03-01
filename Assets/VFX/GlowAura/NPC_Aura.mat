@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AuraMaterial
+  m_Name: NPC_Aura
   m_Shader: {fileID: -6465566751694194690, guid: 4d1e542e59da6284e86188585f72a46b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -104,14 +104,14 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_3cd2912bd2dd485389e3a1a21e51c4b3: {r: 0.2735849, g: 0.058072276, b: 0.058072276, a: 0}
-    - Color_7d0a97e1d3a94d278b28b53ff0160b8b: {r: 1, g: 1, b: 1, a: 0}
+    - Color_3cd2912bd2dd485389e3a1a21e51c4b3: {r: 5.041486, g: 5.041486, b: 5.041486, a: 0}
+    - Color_7d0a97e1d3a94d278b28b53ff0160b8b: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &4459249973032468963
+--- !u!114 &641872309624558948
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

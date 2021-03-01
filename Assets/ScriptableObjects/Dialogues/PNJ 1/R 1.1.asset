@@ -15,3 +15,4 @@ MonoBehaviour:
   response: "R\xE9ponse 1\r\n\r\nC'est une question bien indiscr\xE8te Cela ne vous
     regarde pas Monsieur."
   nextMessage: {fileID: 11400000, guid: 5a437d91d92b60f4dadcdcbe2f96601d, type: 2}
+  auraValue: 0

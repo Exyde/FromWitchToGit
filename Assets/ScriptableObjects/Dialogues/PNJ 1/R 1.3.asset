@@ -15,3 +15,4 @@ MonoBehaviour:
   response: "R\xE9ponse 3\r\n\r\nNon. je viens de lieuperdu. je cherche \xE0 retourner
     \xE0 Lieucommun."
   nextMessage: {fileID: 11400000, guid: ef74cbff62b68eb4aa74e2c4ff8829ba, type: 2}
+  auraImpact: 10

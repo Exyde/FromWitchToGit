@@ -6,16 +6,17 @@ using UnityEngine.EventSystems;
 
 public class DialogueButtonEvent : MonoBehaviour, IPointerClickHandler
 {
-
-	private DialogueManager dialogueManager;
-    public UnityEvent onClick;
-
+	#region Public Fields
+	public UnityEvent onClick;
     public Message nextMessage;
+	public int auraAmount;
+
+	#endregion
+	private DialogueManager dialogueManager;
 
 	private void Start()
 	{
 		dialogueManager = GetComponentInParent<DialogueManager>();
-		print(dialogueManager.name);
 	}
 
 	public void OnPointerClick(PointerEventData pointerEventData)
@@ -25,6 +26,7 @@ public class DialogueButtonEvent : MonoBehaviour, IPointerClickHandler
 
     public void SetNextMessage()
 	{
-		dialogueManager.SetNextMessage(nextMessage);
+		//The function call on Click for the most of messages
+		dialogueManager.SetNextMessage(nextMessage, auraAmount);
 	}
 }

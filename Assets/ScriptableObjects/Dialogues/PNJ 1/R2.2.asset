@@ -16,3 +16,4 @@ MonoBehaviour:
     hauts responsables de la milice. Donc j'ai toujours travaill\xE9 sur la r\xE9solution
     d'enqu\xEAtes similaire."
   nextMessage: {fileID: 11400000, guid: 5eb5dade36599b74d8438f30c6fbd6ef, type: 2}
+  auraImpact: 50
