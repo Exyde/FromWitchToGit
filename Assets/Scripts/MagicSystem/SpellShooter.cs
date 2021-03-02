@@ -4,63 +4,94 @@ using UnityEngine;
 
 public class SpellShooter : MonoBehaviour
 {
-    //Todo : Refacto
-    public GameObject spell;
-    public Transform LFirePoint, RFirePoint;
-    public Camera mainCam;
-    public float projectileSpeed = 10f;
-    public float fireRate = 4f;
-    public float arcRange = 1f;
+    //Spell 1 : Left Hand
+    //Spell 2 : Right Hand
+    //Spell 3 : Both Hand
 
+    [Header ("Spell Shooter Data")]
+    public Camera mainCam;
+    public Transform LFirePoint, RFirePoint;
+    public MovementDatas moveDatas;
     public float spellMaxDistance = 1000f;
+    public Transform SpellHolder;
 
     private Vector3 target;
-    private bool leftHand;
     private float timeToFire;
+    private bool leftHand;
 
-    public MovementDatas moveDatas;
+    [Header("Spells")]
+    public Spell DeconstructSpell;
+    public Spell InstructSpell;
+    public Spell LunarSpell;
 
-    void Update()
+	private void Start()
+	{
+        DeconstructSpell.TimeToFire = InstructSpell.TimeToFire = LunarSpell.TimeToFire = 0;
+	}
+
+	void Update()
     {
         if (!moveDatas.canSpell) return;
 
-        //Spell 1
-        if (Input.GetKey(KeyCode.Alpha1) && Time.time >= timeToFire)
-		{
-            //For later ShootSpell(Spell spell)
-
-            if (leftHand)
-			{
-                leftHand = false;
-                ShootSpell(spell, LFirePoint);
-            } else
-			{
-                leftHand = true;
-                ShootSpell(spell, RFirePoint);
-            } 
+        if (Input.GetKey(KeyCode.Alpha1)) // && Time.time >= timeToFire
+        {
+            ShootSpellSO(DeconstructSpell, LFirePoint);
         }
     }
 
-    void ShootSpell(GameObject spell, Transform firepoint)
+    void ShootSpellSO(Spell spell, Transform firepoint)
 	{
-        timeToFire = Time.time + 1 / fireRate;
-        //Ray Part
-        Ray ray = mainCam.ViewportPointToRay(new Vector3(.5f, .5f, 0));
-        RaycastHit hit;
+        if ((spell.TimeToFire > Time.time))
+        {
+            Debug.Log("Too early !");
+            return;
+        }
 
-        if (Physics.Raycast(ray, out hit))
+        //Update for firerate
+        spell.TimeToFire = Time.time + spell.Cooldown;
+
+        //Ray
+        target = ComputeRay();
+
+        //Instantiate
+        GameObject spellProjectile = Instantiate(spell.SpellPrefab, firepoint.position, Quaternion.identity);
+        spellProjectile.name = spell.SpellName;
+        spellProjectile.transform.parent = SpellHolder;
+
+        //Velocity
+        spellProjectile.GetComponent<Rigidbody>().velocity = (target - firepoint.position).normalized * spell.SpellSpeed;
+
+        //Randomize
+        if (spell.Randomize)
 		{
-            target = hit.point;
-		} else
-		{
-            target = ray.GetPoint(spellMaxDistance);
+            float arcRange = spell.RandomizePercent / 100f;
+            iTween.PunchPosition(spellProjectile, new Vector3(Random.Range(-arcRange, arcRange), Random.Range(-arcRange, arcRange), 0), Random.Range(.5f, 2f));
 		}
+    }
 
-        //Instantiate Part
-        GameObject projectile = Instantiate(spell, firepoint.position, Quaternion.identity);
-        projectile.GetComponent<Rigidbody>().velocity = (target - firepoint.position).normalized * projectileSpeed;
-
-        iTween.PunchPosition(projectile, new Vector3 (Random.Range(-arcRange, arcRange),Random.Range(-arcRange, arcRange), 0), Random.Range(.5f, 2f));
+    void CastSpell(Spell spell)
+	{
 
 	}
+
+	#region Helper Fonctions
+
+    Vector3 ComputeRay()
+	{
+        Ray ray = mainCam.ViewportPointToRay(new Vector3(.5f, .5f, 0));
+        RaycastHit hit;
+        Vector3 targ;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            targ = hit.point;
+        }
+        else
+        {
+            targ = ray.GetPoint(spellMaxDistance);
+        }
+
+        return targ;
+    }
+	#endregion
 }

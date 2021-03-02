@@ -2,21 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public  abstract class Spell : ScriptableObject
+[CreateAssetMenu (fileName = "New Spell", menuName = "Spells")]
+public class Spell : ScriptableObject
 {
-	//Never instantiaded -- MLF :D
-	//Todo : Update with all the design things for our spells.
-	 
-	public string spellName = "New Spell";
-	public Sprite spellSprite;
-	public AudioClip spellSound;
+	//Size handled by the prefab.
+	//Spell type depending on Collider
+	public string SpellName = "New Spell";
 
+	public Sprite SpellSprite;
+
+	[Header("Spell Datas")]
 	public float Cooldown = 1f;
-	public float Damage = 100;
+	public int Charges = 50;
+	public float SpellSpeed = 25f;
 
-	public ParticleSystem spellVFX;
+	[Header ("Debug")]
+	//[HideInInspector]
+	public float TimeToFire;
 
-	public abstract void Initialize(GameObject go);
-	public abstract void TriggerSpell();
+	[Header ("Randomize")]
+	public bool Randomize = false;
+	[Range (0, 100)]
+	public int RandomizePercent = 0;
+
+	[Header("Prefabs")]
+	public GameObject SpellPrefab; //Projectile
+	public GameObject ImpactPrefab;
+	public GameObject MuzzlePrefab;
+
+	[Header ("Audio")]
+	public AudioClip SpellSound;
+	public AudioClip ImpactSound;
+	public AudioClip Voiceline;
 
 }
