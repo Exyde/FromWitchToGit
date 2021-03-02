@@ -13,11 +13,14 @@ public class SpellShooter : MonoBehaviour
     public Transform LFirePoint, RFirePoint;
     public MovementDatas moveDatas;
     public float spellMaxDistance = 1000f;
-    public Transform SpellHolder;
+    //public Transform SpellHolder;
 
     private Vector3 target;
     private float timeToFire;
     private bool leftHand;
+    private float globalCooldown = .5f;
+    private float globalTimeToSpell = 0f;
+
 
     [Header("Spells")]
     public Spell DeconstructSpell;
@@ -27,15 +30,27 @@ public class SpellShooter : MonoBehaviour
 	private void Start()
 	{
         DeconstructSpell.TimeToFire = InstructSpell.TimeToFire = LunarSpell.TimeToFire = 0;
+        globalTimeToSpell = 0;
 	}
 
 	void Update()
     {
         if (!moveDatas.canSpell) return;
 
-        if (Input.GetKey(KeyCode.Alpha1)) // && Time.time >= timeToFire
+
+        if (Input.GetKey(KeyCode.Alpha1) && globalTimeToSpell < Time.time)
         {
             ShootSpellSO(DeconstructSpell, LFirePoint);
+        }
+
+        if (Input.GetKey(KeyCode.Alpha2) && globalTimeToSpell < Time.time)
+        {
+            ShootSpellSO(InstructSpell, RFirePoint);
+        }
+
+        if (Input.GetKey(KeyCode.Alpha3) && globalTimeToSpell < Time.time)
+        {
+            //ShootSpellSO(DeconstructSpell, LFirePoint);
         }
     }
 
@@ -47,16 +62,19 @@ public class SpellShooter : MonoBehaviour
             return;
         }
 
+        //Update global timer
+        globalTimeToSpell = Time.time + globalCooldown;
+
         //Update for firerate
         spell.TimeToFire = Time.time + spell.Cooldown;
 
         //Ray
-        target = ComputeRay();
+        target = ComputeTargetRay();
 
         //Instantiate
-        GameObject spellProjectile = Instantiate(spell.SpellPrefab, firepoint.position, Quaternion.identity);
+        GameObject spellProjectile = Instantiate(spell.SpellPrefab, firepoint.position, spell.SpellPrefab.transform.rotation);
         spellProjectile.name = spell.SpellName;
-        spellProjectile.transform.parent = SpellHolder;
+        //spellProjectile.transform.parent = SpellHolder;
 
         //Velocity
         spellProjectile.GetComponent<Rigidbody>().velocity = (target - firepoint.position).normalized * spell.SpellSpeed;
@@ -71,12 +89,12 @@ public class SpellShooter : MonoBehaviour
 
     void CastSpell(Spell spell)
 	{
-
+        //Todo : Implement Lunar Shield Spell
 	}
 
 	#region Helper Fonctions
 
-    Vector3 ComputeRay()
+    Vector3 ComputeTargetRay()
 	{
         Ray ray = mainCam.ViewportPointToRay(new Vector3(.5f, .5f, 0));
         RaycastHit hit;

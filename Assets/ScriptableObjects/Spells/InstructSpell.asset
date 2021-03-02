@@ -20,8 +20,9 @@ MonoBehaviour:
   TimeToFire: 0
   Randomize: 0
   RandomizePercent: 0
-  SpellPrefab: {fileID: 0}
-  ImpactPrefab: {fileID: 0}
+  SpellPrefab: {fileID: 1588436372242031098, guid: 4f747be139aca094681b89359b0d6b41, type: 3}
+  ImpactPrefab: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
   MuzzlePrefab: {fileID: 0}
   SpellSound: {fileID: 0}
   ImpactSound: {fileID: 0}
+  Voiceline: {fileID: 0}

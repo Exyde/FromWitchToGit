@@ -17,9 +17,9 @@ MonoBehaviour:
   Cooldown: 1
   Charges: 50
   SpellSpeed: 10
-  TimeToFire: 74.22947
+  TimeToFire: 14.116935
   Randomize: 0
-  RandomizePercent: 84
+  RandomizePercent: 0
   SpellPrefab: {fileID: 1588436372242031098, guid: c0441503e4fab7a43987563ab85e8b6b, type: 3}
   ImpactPrefab: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
   MuzzlePrefab: {fileID: 0}
