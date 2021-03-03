@@ -50,6 +50,7 @@ public class Sorcelable : MonoBehaviour
 
     public void TakeDamage(Spell spell)
 	{
+        //Todo :Check for null
         if (spell.Deconstruct)
         {
             if (deconstructHP > 0)

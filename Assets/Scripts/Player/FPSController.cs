@@ -23,7 +23,6 @@ public class FPSController : MonoBehaviour
 
     [Header ("Debug")]
     //[HideInInspector]
-    public bool showCursor = false;
 	#endregion
 
 	#region Private Fields
@@ -36,10 +35,6 @@ public class FPSController : MonoBehaviour
 	void Start()
     {
         characterController = GetComponent<CharacterController>();
-
-        //Cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = showCursor;
     }
 
     void Update()
