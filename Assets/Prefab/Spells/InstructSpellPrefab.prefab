@@ -5013,6 +5013,7 @@ GameObject:
   - component: {fileID: 5075656798219059440}
   - component: {fileID: 2203672629598113598}
   - component: {fileID: -3019583734157248187}
+  - component: {fileID: -5793681350359978665}
   m_Layer: 0
   m_Name: InstructSpellPrefab
   m_TagString: Spell
@@ -5076,7 +5077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e308697e1295b49b9a7f0214cb4f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactVFX: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
+  spell: {fileID: 0}
 --- !u!114 &-3019583734157248187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,6 +5090,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d729bda13d3874881b815ea0f8e651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 5
+--- !u!114 &-5793681350359978665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588436372242031098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e308697e1295b49b9a7f0214cb4f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spell: {fileID: 11400000, guid: 1a29f10c960a3704c95b804d4759b8b1, type: 2}
 --- !u!1 &7407965449230593665
 GameObject:
   m_ObjectHideFlags: 0

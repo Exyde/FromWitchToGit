@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: DeconstructSpell
   m_EditorClassIdentifier: 
   SpellName: Lunar Spellar
+  Instruct: 0
+  Deconstruct: 1
   SpellSprite: {fileID: 0}
   Cooldown: 1
   Charges: 50

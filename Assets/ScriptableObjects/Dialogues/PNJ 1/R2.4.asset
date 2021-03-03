@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R2.4
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 3.2\r\n\r\nOui. Ma famille est l\xE0-bas. Je suis en route
-    pour rentrer chez moi. Je reviens de la capital pour commercer."
+  response: "Oui. Ma famille est l\xE0-bas. Je suis en route pour rentrer chez moi.
+    Je reviens de la capital pour commercer."
   nextMessage: {fileID: 11400000, guid: 8a51779d564b5864a9404f19979cc990, type: 2}
-  auraImpact: 50
+  auraValue: 0

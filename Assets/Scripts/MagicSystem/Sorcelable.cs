@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Sorcelable : MonoBehaviour
 {
-    // 6max : dynamic array, enable/disable the usesless one from hp
-
     [Header ("References")]
     public GameObject deconstructPanel;
     public GameObject instructPanel;
@@ -26,28 +24,54 @@ public class Sorcelable : MonoBehaviour
 
     void Start()
     {
-        CreateContainerUI(moonContainerPrefab, instructPanel.transform, MaxDeconstructHP);
-        CreateContainerUI(chainContainerPrefab, deconstructPanel.transform, MaxInstructHP);
-    }
+        deconstructHP = MaxDeconstructHP;
+        instructHP = MaxInstructHP;
 
-    void Update()
-    {
-        
+        CreateContainerUI(moonContainerPrefab, instructPanel.transform, MaxInstructHP);
+        CreateContainerUI(chainContainerPrefab, deconstructPanel.transform, MaxDeconstructHP);
     }
 
     void CreateContainerUI(GameObject container, Transform parent, int maxHp)
 	{
+        //Not sure why it's working, but it's working
+
         float w = parent.GetComponent<RectTransform>().sizeDelta.x;
         int n = maxHp;
         float l = container.GetComponent<RectTransform>().sizeDelta.x;
 
         float offset = (w - (l * n)) / n;
-        print(offset);
 
         for (int i = 0; i < maxHp; i++)
 		{
             GameObject go = Instantiate(container, new Vector3(i, 0, 0), Quaternion.identity);
             go.transform.SetParent(parent, false);
 		}
+	}
+
+    public void TakeDamage(Spell spell)
+	{
+        if (spell.Deconstruct)
+        {
+            if (deconstructHP > 0)
+			{
+                deconstructHP--;
+                int lasthp = deconstructPanel.transform.childCount - 1;
+                print("Deconstruct hp last index : " + lasthp);
+
+                Destroy(deconstructPanel.transform.GetChild(lasthp).gameObject);
+			}
+        }
+        else if (spell.Instruct)
+        {
+            if (deconstructHP <= 0 && instructHP > 0)
+			{
+                instructHP--;
+                int lasthp = instructPanel.transform.childCount - 1;
+                print("Instruct hp last index : " + lasthp);
+
+                Destroy(instructPanel.transform.GetChild(lasthp).gameObject);
+			}
+        }
+        else return;
 	}
 }

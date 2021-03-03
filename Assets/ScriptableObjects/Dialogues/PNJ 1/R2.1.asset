@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R2.1
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 2.1\r\n\r\nC'est parce que vous ne sortez jamais de votre
-    campagne. Il existe beaucoup de choses que vous n'avez surement jamais vu."
+  response: C'est parce que vous ne sortez jamais de votre campagne. Il existe beaucoup
+    de choses que vous n'avez surement jamais vu.
   nextMessage: {fileID: 11400000, guid: 5a437d91d92b60f4dadcdcbe2f96601d, type: 2}
-  auraImpact: -80
+  auraValue: 0

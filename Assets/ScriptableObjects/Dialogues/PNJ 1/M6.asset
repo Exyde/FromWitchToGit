@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: M6
   m_EditorClassIdentifier: 
   endDialogue: 1
-  message: "PNJ (H)\r\n\r\nUne jeune femme qui voyage et commerce seule ? Vraiment
-    \xE9trange..."
+  message: "Une jeune femme qui voyage et commerce seule ? Vraiment \xE9trange..."
   responses: []

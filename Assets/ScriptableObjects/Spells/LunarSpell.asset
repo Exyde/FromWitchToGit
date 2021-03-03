@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4debe9a6da153724280442da1e7bf40d, type: 3}
   m_Name: LunarSpell
   m_EditorClassIdentifier: 
-  SpellName: New Spell
+  SpellName: Lunar Clip
+  Instruct: 0
+  Deconstruct: 0
   SpellSprite: {fileID: 0}
   Cooldown: 1
   Charges: 50
@@ -25,3 +27,4 @@ MonoBehaviour:
   MuzzlePrefab: {fileID: 0}
   SpellSound: {fileID: 0}
   ImpactSound: {fileID: 0}
+  Voiceline: {fileID: 0}

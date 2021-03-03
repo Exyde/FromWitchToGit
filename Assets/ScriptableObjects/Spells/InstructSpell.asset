@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4debe9a6da153724280442da1e7bf40d, type: 3}
   m_Name: InstructSpell
   m_EditorClassIdentifier: 
-  SpellName: New Spell
+  SpellName: Learn your brocolis
+  Instruct: 1
+  Deconstruct: 0
   SpellSprite: {fileID: 0}
   Cooldown: 1
   Charges: 50

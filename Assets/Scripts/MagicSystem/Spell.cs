@@ -8,6 +8,8 @@ public class Spell : ScriptableObject
 	//Size handled by the prefab.
 	//Spell type depending on Collider
 	public string SpellName = "New Spell";
+	public bool Instruct = false;
+	public bool Deconstruct = false;
 
 	public Sprite SpellSprite;
 

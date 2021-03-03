@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
   m_Name: M2
   m_EditorClassIdentifier: 
-  message: "PNJ (H)\r\n\r\nVraiment ! Je n'avais encore jamais vu de femme travailler
-    sur ce genre d'enqu\xEAtes. Vous avez beaucoup d'exp\xE9rience ?"
+  endDialogue: 0
+  message: "Vraiment ! Je n'avais encore jamais vu de femme travailler sur ce genre
+    d'enqu\xEAtes. Vous avez beaucoup d'exp\xE9rience ?"
   responses:
   - {fileID: 11400000, guid: 717c05ec383137e4dad345c51143e7ff, type: 2}
   - {fileID: 11400000, guid: 18c6170f6690a5543adc42b4ffc2370f, type: 2}

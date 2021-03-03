@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R 1.3
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 3\r\n\r\nNon. je viens de lieuperdu. je cherche \xE0 retourner
-    \xE0 Lieucommun."
+  response: "Non. je viens de lieuperdu. je cherche \xE0 retourner \xE0 Lieucommun."
   nextMessage: {fileID: 11400000, guid: ef74cbff62b68eb4aa74e2c4ff8829ba, type: 2}
-  auraImpact: 10
+  auraValue: 0

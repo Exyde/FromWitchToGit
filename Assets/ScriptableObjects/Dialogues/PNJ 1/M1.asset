@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
   m_Name: M1
   m_EditorClassIdentifier: 
-  message: "PNJ (H)\r\n\r\nBonjour. Je ne vous ai jamais vu auparavant. Etes vous
-    de la r\xE9gion ?"
+  endDialogue: 0
+  message: "Bonjour. Je ne vous ai jamais vu auparavant. Etes vous de la r\xE9gion
+    ?"
   responses:
   - {fileID: 11400000, guid: 455585b244d9a0b4aae0133d77a2835b, type: 2}
   - {fileID: 11400000, guid: a960d3481a295a84588fa965861008b8, type: 2}

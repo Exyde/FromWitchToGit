@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: M4
   m_EditorClassIdentifier: 
   endDialogue: 1
-  message: 'PNJ (H)
-
-
-
-    Vraiment ! C''est impressionnant ! Vous pouvez compter
-    sur moi si vous avez besoin d''aide.'
+  message: Vraiment ! C'est impressionnant ! Vous pouvez compter sur moi si vous
+    avez besoin d'aide.
   responses:
   - {fileID: 0}

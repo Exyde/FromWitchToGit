@@ -5011,6 +5011,7 @@ GameObject:
   - component: {fileID: 1588436372242031101}
   - component: {fileID: 5075656798219059440}
   - component: {fileID: -7907457422824347562}
+  - component: {fileID: 7536228443673159295}
   m_Layer: 0
   m_Name: DeconstructSpellPrefab
   m_TagString: Untagged
@@ -5061,6 +5062,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d729bda13d3874881b815ea0f8e651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 5
+--- !u!114 &7536228443673159295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588436372242031098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e308697e1295b49b9a7f0214cb4f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spell: {fileID: 11400000, guid: b3e05cba7366c4345b5a92431ebd0515, type: 2}
 --- !u!1 &7407965449230593665
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,4 +5280,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e308697e1295b49b9a7f0214cb4f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactVFX: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
+  spell: {fileID: 0}

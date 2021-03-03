@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R2.3
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 3.1\r\n\r\nNon, mais je travaille pour le saigneur de Tiercelieu
-    qui administre ce village.\r\n\r\nJe dois enqu\xEAter sur une affaire importante."
+  response: "Non, mais je travaille pour le saigneur de Tiercelieu qui administre
+    ce village.\r\n\r\nJe dois enqu\xEAter sur une affaire importante."
   nextMessage: {fileID: 11400000, guid: b03c9fcca314e9d46bca7af143fcfe2c, type: 2}
-  auraImpact: 50
+  auraValue: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R2.2
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 2.2\r\n\r\nEn fait, les hommes de ma famille sont tous des
-    hauts responsables de la milice. Donc j'ai toujours travaill\xE9 sur la r\xE9solution
-    d'enqu\xEAtes similaire."
+  response: "En fait, les hommes de ma famille sont tous des hauts responsables de
+    la milice. Donc j'ai toujours travaill\xE9 sur la r\xE9solution d'enqu\xEAtes
+    similaire."
   nextMessage: {fileID: 11400000, guid: 5eb5dade36599b74d8438f30c6fbd6ef, type: 2}
-  auraImpact: 50
+  auraValue: 0

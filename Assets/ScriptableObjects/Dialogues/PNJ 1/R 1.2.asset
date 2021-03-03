@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: R 1.2
   m_EditorClassIdentifier: 
-  response: "R\xE9ponse 2\r\n\r\nJe viens de la capital. J'ai \xE9t\xE9 appel\xE9e
-    par la milice pour aider \xE0 r\xE9soudre l'enqu\xEAte."
+  response: "Je viens de la capital. J'ai \xE9t\xE9 appel\xE9e par la milice pour
+    aider \xE0 r\xE9soudre l'enqu\xEAte."
   nextMessage: {fileID: 11400000, guid: 2eab7275030677447a06f506610cd035, type: 2}
-  auraImpact: 25
+  auraValue: 0
