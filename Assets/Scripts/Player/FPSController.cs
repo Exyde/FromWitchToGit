@@ -27,6 +27,7 @@ public class FPSController : MonoBehaviour
 
 	#region Private Fields
 	CharacterController characterController;
+    AnimationController animatorController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
 	#endregion
@@ -35,6 +36,7 @@ public class FPSController : MonoBehaviour
 	void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animatorController = GetComponent<AnimationController>();
     }
 
     void Update()
@@ -51,6 +53,14 @@ public class FPSController : MonoBehaviour
         float curSpeedY = moveDatas.canMove ? (isRunning ? moveDatas.runningSpeed : moveDatas.walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+        if (moveDirection.x != 0 || moveDirection.z != 0)
+		{
+            animatorController.SetRun();
+		} else
+		{
+            animatorController.SetIdle();
+		}
 
         if (Input.GetButton("Jump") && moveDatas.canMove && characterController.isGrounded)
         {
