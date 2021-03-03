@@ -22,6 +22,8 @@ public class Sorcelable : MonoBehaviour
     public int MaxInstructHP;
     public int instructHP;
 
+    public float offset = .8f;
+
     void Start()
     {
         deconstructHP = MaxDeconstructHP;
@@ -33,24 +35,24 @@ public class Sorcelable : MonoBehaviour
 
     void CreateContainerUI(GameObject container, Transform parent, int maxHp)
 	{
-        //Not sure why it's working, but it's working
-
+        //Custom Math useless :(
+        /*
         float w = parent.GetComponent<RectTransform>().sizeDelta.x;
         int n = maxHp;
         float l = container.GetComponent<RectTransform>().sizeDelta.x;
-
         float offset = (w - (l * n)) / n;
+        */
 
         for (int i = 0; i < maxHp; i++)
 		{
-            GameObject go = Instantiate(container, new Vector3(i, 0, 0), Quaternion.identity);
+            GameObject go = Instantiate(container, new Vector3(i / offset, 0, 0), Quaternion.identity);
             go.transform.SetParent(parent, false);
 		}
 	}
 
     public void TakeDamage(Spell spell)
 	{
-        //Todo :Check for null
+        //Todo : Check for null
         if (spell.Deconstruct)
         {
             if (deconstructHP > 0)

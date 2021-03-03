@@ -8,7 +8,10 @@ public class DialogueButtonEvent : MonoBehaviour, IPointerClickHandler
 {
 	#region Public Fields
 	public UnityEvent onClick;
+
+	[HideInInspector]
     public Message nextMessage;
+	[HideInInspector]
 	public int auraAmount;
 
 	#endregion

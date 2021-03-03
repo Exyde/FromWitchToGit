@@ -11,8 +11,10 @@ public class PlayerCursor : MonoBehaviour
 
     void Start()
     {
+        CursorMode mode = CursorMode.ForceSoftware;
+        hotspot = new Vector2(0, dialogueCursor.height);
 
-        Cursor.SetCursor(dialogueCursor, hotspot, CursorMode.Auto);
+        Cursor.SetCursor(dialogueCursor, hotspot, mode);
 
         //Cursor
         Cursor.lockState = CursorLockMode.Locked;
