@@ -10,6 +10,7 @@ public class Sorcelable : MonoBehaviour
     public GameObject instructPanel;
     public GameObject moonContainerPrefab;
     public GameObject chainContainerPrefab;
+    public float offset = .8f;
 
     [Header("Deconstruct Data")]
     [Range (0, 6)]
@@ -21,28 +22,27 @@ public class Sorcelable : MonoBehaviour
     [Range(0, 6)]
     public int MaxInstructHP;
     public int instructHP;
+    public Color instructColor = new Color(1, 235, 255, 255);
 
-    public float offset = .8f;
+
+    [Header("Liberation References")]
+    public GameObject FreeEntityPrefab;
+    public GameObject FreeFXPrefab;
+    public GameObject MalveillantFXPrefab;
 
     void Start()
     {
+        //Setup both hp values
         deconstructHP = MaxDeconstructHP;
-        instructHP = MaxInstructHP;
+        instructHP = 0;
 
+        //Create the UI Bar Elements
         CreateContainerUI(moonContainerPrefab, instructPanel.transform, MaxInstructHP);
         CreateContainerUI(chainContainerPrefab, deconstructPanel.transform, MaxDeconstructHP);
     }
 
     void CreateContainerUI(GameObject container, Transform parent, int maxHp)
 	{
-        //Custom Math useless :(
-        /*
-        float w = parent.GetComponent<RectTransform>().sizeDelta.x;
-        int n = maxHp;
-        float l = container.GetComponent<RectTransform>().sizeDelta.x;
-        float offset = (w - (l * n)) / n;
-        */
-
         for (int i = 0; i < maxHp; i++)
 		{
             GameObject go = Instantiate(container, new Vector3(i / offset, 0, 0), Quaternion.identity);
@@ -52,29 +52,52 @@ public class Sorcelable : MonoBehaviour
 
     public void TakeDamage(Spell spell)
 	{
-        //Todo : Check for null
+        //Debug
+        if (spell == null)
+		{
+            Debug.Log("Null reference exception !");
+		}
+        
+        //Deconstruct Spell - First Health Bar
         if (spell.Deconstruct)
         {
             if (deconstructHP > 0)
 			{
                 deconstructHP--;
-                int lasthp = deconstructPanel.transform.childCount - 1;
-                print("Deconstruct hp last index : " + lasthp);
+                int childIndex = deconstructPanel.transform.childCount - 1;
 
-                Destroy(deconstructPanel.transform.GetChild(lasthp).gameObject);
+                Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
 			}
         }
+        // Instruct Spell - Second Health Bar
         else if (spell.Instruct)
         {
-            if (deconstructHP <= 0 && instructHP > 0)
+            if (deconstructHP <= 0 && instructHP < MaxInstructHP)
 			{
-                instructHP--;
-                int lasthp = instructPanel.transform.childCount - 1;
-                print("Instruct hp last index : " + lasthp);
+                instructHP++;
+                int childIndex = instructHP - 1;
 
-                Destroy(instructPanel.transform.GetChild(lasthp).gameObject);
+                instructPanel.transform.GetChild(childIndex).GetComponent<Image>().color = instructColor;
+
+                if (instructHP == MaxInstructHP)
+				{
+                    StartCoroutine(FreeEntity());
+				}
 			}
         }
         else return;
+	}
+
+    IEnumerator FreeEntity()
+	{
+        //Function for freeing the Entity. Summon the healed entity, the malveillent leaving fx, and some impact I guess.
+
+        iTween.ScaleTo(this.gameObject, iTween.Hash("x", .5, "z", .5, "y", .5));
+
+        yield return new WaitForSeconds(1f);
+
+        Instantiate(FreeEntityPrefab, transform.position, FreeEntityPrefab.transform.rotation);
+        Instantiate(FreeFXPrefab, transform.position, Quaternion.identity);
+        Destroy(this.gameObject);
 	}
 }

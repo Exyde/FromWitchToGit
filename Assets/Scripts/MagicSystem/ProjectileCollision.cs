@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class ProjectileCollision : MonoBehaviour
 {
-
 	public Spell spell;
-	public bool InstructSpell = false;
 
 	private void OnCollisionEnter(Collision collision)
 	{
@@ -15,13 +13,20 @@ public class ProjectileCollision : MonoBehaviour
 		if (collision.gameObject.TryGetComponent<Sorcelable>(out entity))
 		{
 			entity.TakeDamage(spell);
+			InstantiateImpactVFX(spell.ImpactPrefab);
 			Destroy(gameObject);
 		}
 
-		if (collision.gameObject.tag != "Spell" && collision.gameObject.tag != "Player")
+		else if (collision.gameObject.tag != "Spell" && collision.gameObject.tag != "Player")
 		{
-
+			InstantiateImpactVFX(spell.ImpactPrefab);
 			Destroy(gameObject);
 		}
+		else return;
 	}
+	void InstantiateImpactVFX(GameObject prefab)
+	{
+		Instantiate(prefab, transform.position, Quaternion.identity);
+	}
+
 }

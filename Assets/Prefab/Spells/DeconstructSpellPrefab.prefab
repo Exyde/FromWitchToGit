@@ -5181,7 +5181,6 @@ GameObject:
   - component: {fileID: 964973194783964174}
   - component: {fileID: 1709505882657453419}
   - component: {fileID: 750853921045574743}
-  - component: {fileID: 5669827511801746848}
   m_Layer: 0
   m_Name: Spherevisual
   m_TagString: Spell
@@ -5268,16 +5267,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.08072114
   m_Center: {x: -0.0076061953, y: -0.004230574, z: 0.01013089}
---- !u!114 &5669827511801746848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8083537672065636849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e308697e1295b49b9a7f0214cb4f88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 0}
