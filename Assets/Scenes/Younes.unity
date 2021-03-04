@@ -9803,11 +9803,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465980322}
   m_Mesh: {fileID: 4579454407841743219, guid: f1e59b65f9e274646a58d8a64b61cc40, type: 3}
---- !u!95 &471261278 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5209745503020050379, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
-  m_PrefabInstance: {fileID: 686401441171682160}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &471363148
 GameObject:
   m_ObjectHideFlags: 0
@@ -26124,6 +26119,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &1247862831 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8416797624118582625, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
+  m_PrefabInstance: {fileID: 686401441171682160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1248425314
 GameObject:
   m_ObjectHideFlags: 0
@@ -33064,7 +33064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f50060a485c83543b397b39b9cc8b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 471261278}
+  animator: {fileID: 1247862831}
 --- !u!1 &1539947917
 GameObject:
   m_ObjectHideFlags: 0
@@ -46192,7 +46192,7 @@ PrefabInstance:
       objectReference: {fileID: 919132148316645252}
     - target: {fileID: 686401441571691721, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512613085630274240, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_LocalScale.x
@@ -46217,6 +46217,10 @@ PrefabInstance:
     - target: {fileID: 2996381277085352058, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146502577325310684, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
+      propertyPath: m_Name
+      value: SorceressFBX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
