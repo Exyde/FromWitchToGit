@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4debe9a6da153724280442da1e7bf40d, type: 3}
+  m_Name: InstructSpell
+  m_EditorClassIdentifier: 
+  SpellName: Learn your brocolis
+  Instruct: 1
+  Deconstruct: 0
+  SpellSprite: {fileID: 0}
+  Cooldown: 1
+  Charges: 50
+  SpellSpeed: 25
+  TimeToFire: 0
+  Randomize: 0
+  RandomizePercent: 0
+  SpellPrefab: {fileID: 1588436372242031098, guid: 4f747be139aca094681b89359b0d6b41, type: 3}
+  ImpactPrefab: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
+  MuzzlePrefab: {fileID: 0}
+  SpellSound: {fileID: 0}
+  ImpactSound: {fileID: 0}
+  Voiceline: {fileID: 0}

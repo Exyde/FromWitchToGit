@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
+  m_Name: M1
+  m_EditorClassIdentifier: 
+  endDialogue: 0
+  message: "Bonjour. Je ne vous ai jamais vu auparavant. Etes vous de la r\xE9gion
+    ?"
+  responses:
+  - {fileID: 11400000, guid: 455585b244d9a0b4aae0133d77a2835b, type: 2}
+  - {fileID: 11400000, guid: a960d3481a295a84588fa965861008b8, type: 2}
+  - {fileID: 11400000, guid: 17b0a8f61e01b854b85979fcfb21e33d, type: 2}

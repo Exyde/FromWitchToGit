@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
+  m_Name: R2.4
+  m_EditorClassIdentifier: 
+  response: "Oui. Ma famille est l\xE0-bas. Je suis en route pour rentrer chez moi.
+    Je reviens de la capital pour commercer."
+  nextMessage: {fileID: 11400000, guid: 8a51779d564b5864a9404f19979cc990, type: 2}
+  auraValue: 0

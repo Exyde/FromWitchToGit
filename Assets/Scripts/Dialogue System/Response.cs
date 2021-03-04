@@ -9,4 +9,7 @@ public class Response : ScriptableObject
 	public string response;
 
 	public Message nextMessage;
+
+	[Range (0, 100)]
+	public int auraValue = 0;
 }
