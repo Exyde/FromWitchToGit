@@ -58,7 +58,6 @@ public class SpellShooter : MonoBehaviour
 	{
         if ((spell.TimeToFire > Time.time))
         {
-            Debug.Log("Too early !");
             return;
         }
 
