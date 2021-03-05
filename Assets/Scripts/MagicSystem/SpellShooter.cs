@@ -13,6 +13,7 @@ public class SpellShooter : MonoBehaviour
     public Transform LFirePoint, RFirePoint;
     public MovementDatas moveDatas;
     public float spellMaxDistance = 1000f;
+    AnimationController animationController;
     //public Transform SpellHolder;
 
     private Vector3 target;
@@ -29,6 +30,7 @@ public class SpellShooter : MonoBehaviour
 
 	private void Start()
 	{
+        animationController = GetComponent<AnimationController>();
         DeconstructSpell.TimeToFire = InstructSpell.TimeToFire = LunarSpell.TimeToFire = 0;
         globalTimeToSpell = 0;
 	}
@@ -60,6 +62,14 @@ public class SpellShooter : MonoBehaviour
         {
             return;
         }
+
+        if (firepoint == LFirePoint)
+		{
+            animationController.SetLeftSpell();
+		} else
+		{
+            animationController.SetRightSpell();
+		}
 
         //Update global timer
         globalTimeToSpell = Time.time + globalCooldown;
