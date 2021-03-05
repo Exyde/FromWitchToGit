@@ -54,10 +54,16 @@ public class FPSController : MonoBehaviour
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (moveDirection.x != 0 || moveDirection.z != 0)
+        //Animations Part
+        if (isRunning && (moveDirection.x != 0 || moveDirection.z != 0))
 		{
             animatorController.SetRun();
-		} else
+        }
+        else if (moveDirection.x != 0 || moveDirection.z != 0)
+		{
+            animatorController.SetWalk();
+		} 
+        else
 		{
             animatorController.SetIdle();
 		}
@@ -65,6 +71,7 @@ public class FPSController : MonoBehaviour
         if (Input.GetButton("Jump") && moveDatas.canMove && characterController.isGrounded)
         {
             moveDirection.y = moveDatas.jumpSpeed;
+            animatorController.SetJump();
         }
         else
         {
