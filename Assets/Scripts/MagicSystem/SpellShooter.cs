@@ -125,7 +125,6 @@ public class SpellShooter : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-
         Gizmos.DrawWireSphere(LFirePoint.transform.position, .1f);
         Gizmos.DrawWireSphere(RFirePoint.transform.position, .1f);
     }
