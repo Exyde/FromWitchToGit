@@ -1,14 +1,32 @@
 fileFormatVersion: 2
-guid: aad70ec4b908abf4e852a184c9330308
+guid: 317ddf9d72e48cd478aff374aad56209
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -78736315327977006
-    second: metarig|metarigAction.004
+      74: 6533196968295754381
+    second: metarig|Crouch
   - first:
-      74: 7229847881314458234
-    second: metarig|Running.001
+      74: -5324238279805231817
+    second: metarig|Idle
+  - first:
+      74: 3819204733282340162
+    second: metarig|Jump
+  - first:
+      74: -3406386932955954142
+    second: metarig|No Move Base
+  - first:
+      74: -2483591982332496685
+    second: metarig|Run
+  - first:
+      74: 8671863884201077554
+    second: metarig|Spell Left
+  - first:
+      74: 5817261799224134343
+    second: metarig|Spell Right
+  - first:
+      74: 2933577835342229695
+    second: metarig|Walk
   externalObjects: {}
   materials:
     materialImportMode: 2
