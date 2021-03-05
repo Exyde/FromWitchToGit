@@ -5016,6 +5016,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2233394555328994485, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1156524079}
+    - target: {fileID: 2233394555328994485, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
       propertyPath: npcName
       value: Garde 2
       objectReference: {fileID: 0}
@@ -7554,6 +7558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
+--- !u!1 &1156524079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 686401439686734186, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
+  m_PrefabInstance: {fileID: 1156524078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1160887544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8380,6 +8389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2233394555328994485, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1156524079}
     - target: {fileID: 2233394555328994485, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
       propertyPath: npcName
       value: Garde 1
