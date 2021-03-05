@@ -71,7 +71,7 @@ public class FPSController : MonoBehaviour
         if (Input.GetButton("Jump") && moveDatas.canMove && characterController.isGrounded)
         {
             moveDirection.y = moveDatas.jumpSpeed;
-            //animatorController.SetJump();
+            animatorController.SetJump();
         }
         else
         {
