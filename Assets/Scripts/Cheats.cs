@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Cheats : MonoBehaviour
 {
-
     public GameObject lg;
 
     public MovementDatas moveDatas;
@@ -26,6 +25,11 @@ public class Cheats : MonoBehaviour
 		{
             ToggleMovement();
 		}
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Cursor.visible = !Cursor.visible;
+        }
     }
 
     void ToggleMovement()

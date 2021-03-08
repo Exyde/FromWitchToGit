@@ -16,7 +16,7 @@ public class AnimationController : MonoBehaviour
     //Spells strings
     string LEFT_SPELL = "LeftSpell";
     string RIGHT_SPELL = "RightSpell";
-    string CAST_SPELL = "CastSpell";
+    //string CAST_SPELL = "CastSpell";
 	#endregion
 
 	void Start()
@@ -58,5 +58,15 @@ public class AnimationController : MonoBehaviour
     public void SetRightSpell()
     {
         animator.SetTrigger(RIGHT_SPELL);
+    }
+
+    public void SetCrouch()
+	{
+        animator.SetBool(CROUCH, true);
+	}
+
+    public void UnSetCrouch()
+    {
+        animator.SetBool(CROUCH, false);
     }
 }

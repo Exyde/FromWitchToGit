@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Jean/2.For\xEAt A.unity"
+    guid: 88f8605fab12e03488c4894ce5d774f8
   m_configObjects: {}

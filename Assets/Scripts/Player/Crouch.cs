@@ -15,6 +15,7 @@ public class Crouch : MonoBehaviour
     public bool crouched = false;
     [SerializeField]
     MovementDatas moveDatas;
+    AnimationController animator;
 
     //Size Datas
     //public float crounchSize;
@@ -31,6 +32,7 @@ public class Crouch : MonoBehaviour
         controller = GetComponent<FPSController>();
         cc = GetComponent<CharacterController>();
         startSize = cc.height;
+        animator = GetComponent<AnimationController>();
 
         startWalkSpeed = moveDatas.walkingSpeed;
         startRunSpeed = moveDatas.runningSpeed;
@@ -44,6 +46,7 @@ public class Crouch : MonoBehaviour
             moveDatas.walkingSpeed = crouchSpeed;
             moveDatas.runningSpeed = crouchSpeed;
             cc.height = startSize / 2;
+            animator.SetCrouch();   
 		}
 
         if (Input.GetKeyUp(CrounchKey))
@@ -51,6 +54,7 @@ public class Crouch : MonoBehaviour
             moveDatas.walkingSpeed = startWalkSpeed;
             moveDatas.runningSpeed = startRunSpeed;
             cc.height = startSize;
+            animator.UnSetCrouch();
         }
     }
 	#endregion
