@@ -26,6 +26,11 @@ public class Cheats : MonoBehaviour
 		{
             ToggleMovement();
 		}
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Cursor.visible = !Cursor.visible;
+        }
     }
 
     void ToggleMovement()
