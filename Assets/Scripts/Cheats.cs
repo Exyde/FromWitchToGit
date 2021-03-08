@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Cheats : MonoBehaviour
 {
-
     public GameObject lg;
 
     public MovementDatas moveDatas;
