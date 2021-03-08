@@ -37,8 +37,8 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        playerInView = Physics.CheckSphere(transform.position, viewRange);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange);
+        playerInView = Physics.CheckSphere(transform.position, viewRange, playerLayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
 
         if (!playerInView && !playerInAttackRange) Patroling();
         if (playerInView && !playerInAttackRange) ChasePlayer();
@@ -90,7 +90,7 @@ public class EnemyAI : MonoBehaviour
             //Attack Content ! 
             Rigidbody rb = Instantiate(attackPrefab, firePoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 2f, ForceMode.Impulse);
+            rb.AddForce(transform.up * .5f, ForceMode.Impulse);
 
 
             alreadyAttacked = true;
