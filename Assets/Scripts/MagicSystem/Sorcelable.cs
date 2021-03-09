@@ -10,6 +10,8 @@ public class Sorcelable : MonoBehaviour
     public GameObject instructPanel;
     public GameObject moonContainerPrefab;
     public GameObject chainContainerPrefab;
+
+    public GameObject ChainDestructionPrefab;
     public float offset = .8f;
 
     [Header("Deconstruct Data")]
@@ -23,6 +25,7 @@ public class Sorcelable : MonoBehaviour
     public int MaxInstructHP;
     public int instructHP;
     public Color instructColor = new Color(1, 235, 255, 255);
+
 
 
     [Header("Liberation References")]
@@ -66,6 +69,7 @@ public class Sorcelable : MonoBehaviour
                 deconstructHP--;
                 int childIndex = deconstructPanel.transform.childCount - 1;
 
+                Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
 			}
         }

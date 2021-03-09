@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public Transform HealthBar;
     public Material[] EmptyMoonMaterials;
 
+    public bool immortal = false;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -24,6 +26,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage()
 	{
+        if (immortal) return;
+
         currentHealth--;
         HealthBar.GetChild(currentHealth).gameObject.GetComponent<MeshRenderer>().material = EmptyMoonMaterials[currentHealth];
 
