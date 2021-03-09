@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float maxHealth = 3;
+    public float currentHealth;
+
     void Start()
     {
-        
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -18,6 +21,11 @@ public class Health : MonoBehaviour
 
     public void TakeDamage()
 	{
-        print("outch");
+        currentHealth--;
+
+        if (currentHealth == 0)
+		{
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
 	}
 }
