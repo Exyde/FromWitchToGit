@@ -11,6 +11,7 @@ public class SpellShooter : MonoBehaviour
     [Header ("Spell Shooter Data")]
     public Camera mainCam;
     public Transform LFirePoint, RFirePoint;
+    public Transform SpellHolder;
     public MovementDatas moveDatas;
     public float spellMaxDistance = 1000f;
     AnimationController animationController;
@@ -28,7 +29,12 @@ public class SpellShooter : MonoBehaviour
     public Spell InstructSpell;
     public Spell LunarSpell;
 
-	private void Start()
+    [Header("Spell Feedback")]
+    public GameObject DeconstructReadyFeedback;
+    public GameObject InstructReadyFeedback;
+
+
+    private void Start()
 	{
         animationController = GetComponent<AnimationController>();
         DeconstructSpell.TimeToFire = InstructSpell.TimeToFire = LunarSpell.TimeToFire = 0;

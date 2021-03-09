@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    public float maxHealth = 3;
-    public float currentHealth;
+    public int maxHealth = 3;
+    public int currentHealth;
+
+    public Transform HealthBar;
 
     void Start()
     {
@@ -22,6 +24,8 @@ public class Health : MonoBehaviour
     public void TakeDamage()
 	{
         currentHealth--;
+        HealthBar.GetChild(currentHealth).gameObject.SetActive(false);
+
 
         if (currentHealth == 0)
 		{
