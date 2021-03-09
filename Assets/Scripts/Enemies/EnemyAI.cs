@@ -9,15 +9,18 @@ public class EnemyAI : MonoBehaviour
     // Documentation : https://www.youtube.com/watch?v=UjkSFoLxesw - Dave, Gamedev
     // Documentation : https://www.youtube.com/watch?v=z20wHJSXk98&t=246s - Lague Platformer
 
-    NavMeshAgent agent;
     Transform player;
+
+    public Vector3[] localWaypoints;
+    Vector3[] globalWaypoints;
 
     public LayerMask groundLayer, playerLayer;
 
     [Header("Patrolling ")]
-    Vector3 targetWalkPoint;
-    bool targetWalkPointSet;
-    public float targetWalkPointRange;
+    public float speed = 8f;
+    public float waitTime = .3f;
+    Vector3 targetWaypoint;
+    int targetWaypointIndex;
 
     [Header("Attacking")]
     public float timeBtwAttack;
@@ -26,13 +29,31 @@ public class EnemyAI : MonoBehaviour
     public GameObject attackPrefab;
 
     [Header("States")]
-    public float viewRange, attackRange;
-    public bool playerInView, playerInAttackRange;
+    [Range (0, 50)]
+    public float viewRange;
+    [Range (0, 50)]
+    public float attackRange;
+
+    [Header("Debug")]
+    public bool playerInView;
+    public bool playerInAttackRange;
 
     private void Awake()
 	{
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
+
+        globalWaypoints = new Vector3[localWaypoints.Length];
+
+        //Cache the local array in world pos, used for navigate.
+        for (int i = 0; i < localWaypoints.Length; i++)
+		{
+            globalWaypoints[i] = localWaypoints[i] + transform.position;
+		}
+
+        transform.position = globalWaypoints[0];
+        targetWaypointIndex = 1;
+        targetWaypoint = globalWaypoints[targetWaypointIndex];
+        targetWaypoint.y = transform.position.y;
 	}
 
     void Update()
@@ -48,41 +69,29 @@ public class EnemyAI : MonoBehaviour
 
     private void Patroling()
 	{
-        if (!targetWalkPointSet) FindWalkPoint();
 
-        if (targetWalkPointSet) agent.SetDestination(targetWalkPoint);
+        //Move to waypoints
+       transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
 
-        Vector3 distanceToWalkPoint = transform.position - targetWalkPoint; 
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (transform.position == targetWaypoint)
 		{
-            targetWalkPointSet = false;
+
+            targetWaypointIndex = (targetWaypointIndex + 1) % globalWaypoints.Length;
+            targetWaypoint = globalWaypoints[targetWaypointIndex];
+            targetWaypoint.y = transform.position.y;
 		}
+
 	}
-
-    void FindWalkPoint()
-	{
-        //Random version :
-        float randZ = Random.Range(-targetWalkPointRange, targetWalkPointRange);
-        float randX = Random.Range(-targetWalkPointRange, targetWalkPointRange);
-
-        targetWalkPoint = new Vector3(transform.position.x + randX, transform.position.y, transform.position.z + randZ);
-
-        //check if target is on the ground :
-        if (Physics.Raycast(targetWalkPoint, -transform.up, 2f, groundLayer))
-		{
-            targetWalkPointSet = true;
-		}
-
-    }
-
     private void ChasePlayer()
 	{
-        agent.SetDestination(player.position);
+        Vector3 playerPos = new Vector3(player.transform.position.x, transform.position.y, player.position.z);
+
+        transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
 	}
 
     private void AttackPlayer()
 	{
-        agent.SetDestination(transform.position);
+        //Stop moving !
         transform.LookAt(player);
 
         if (!alreadyAttacked)
@@ -110,5 +119,25 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawSphere(firePoint.position, .2f);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, viewRange);
+
+        if (localWaypoints != null)
+		{
+            Vector3 startPosition = (Application.isPlaying) ? globalWaypoints[0] : localWaypoints[0] + transform.position;
+            Vector3 previousPosition = startPosition;
+
+            Gizmos.color = Color.cyan;
+            float size = .2f;
+
+            for (int i = 0; i < localWaypoints.Length; i++)
+			{
+                Vector3 globalWaypointPos = (Application.isPlaying) ? globalWaypoints[i] : localWaypoints[i] + transform.position;
+                Gizmos.DrawSphere(globalWaypointPos, size);
+                Gizmos.DrawLine(previousPosition, globalWaypointPos);
+                previousPosition = globalWaypointPos;
+			}
+
+            Gizmos.DrawLine(previousPosition, startPosition);
+
+        }
     }
 }
