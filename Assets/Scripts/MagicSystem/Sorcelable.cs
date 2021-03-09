@@ -91,6 +91,22 @@ public class Sorcelable : MonoBehaviour
     IEnumerator FreeEntity()
 	{
         //Function for freeing the Entity. Summon the healed entity, the malveillent leaving fx, and some impact I guess.
+        Rigidbody rb = null;
+        EnemyAI ai = null;
+
+        //Aplly gravity
+        TryGetComponent<Rigidbody>(out rb);
+        if (rb != null)
+		{
+            rb.useGravity = true;
+		}
+
+        //Disable movement
+        TryGetComponent<EnemyAI>(out ai);
+        if (ai != null)
+		{
+            ai.enabled = false;
+		}
 
         iTween.ScaleTo(this.gameObject, iTween.Hash("x", .5, "z", .5, "y", .5));
 

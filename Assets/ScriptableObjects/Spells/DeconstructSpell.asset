@@ -18,8 +18,8 @@ MonoBehaviour:
   SpellSprite: {fileID: 0}
   Cooldown: 1
   Charges: 50
-  SpellSpeed: 10
-  TimeToFire: 27.32667
+  SpellSpeed: 20
+  TimeToFire: 10.706231
   Randomize: 1
   RandomizePercent: 23
   SpellPrefab: {fileID: 1588436372242031098, guid: c0441503e4fab7a43987563ab85e8b6b, type: 3}

@@ -50,6 +50,7 @@ public class EnemyAI : MonoBehaviour
             globalWaypoints[i] = localWaypoints[i] + transform.position;
 		}
 
+        //Set the base target
         transform.position = globalWaypoints[0];
         targetWaypointIndex = 1;
         targetWaypoint = globalWaypoints[targetWaypointIndex];
@@ -69,13 +70,14 @@ public class EnemyAI : MonoBehaviour
 
     private void Patroling()
 	{
-
-        //Move to waypoints
+       //Move to waypoints -- Add a check for tree ?
        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
+       transform.LookAt(targetWaypoint);
 
+
+        //Get next point
         if (transform.position == targetWaypoint)
 		{
-
             targetWaypointIndex = (targetWaypointIndex + 1) % globalWaypoints.Length;
             targetWaypoint = globalWaypoints[targetWaypointIndex];
             targetWaypoint.y = transform.position.y;
@@ -85,13 +87,13 @@ public class EnemyAI : MonoBehaviour
     private void ChasePlayer()
 	{
         Vector3 playerPos = new Vector3(player.transform.position.x, transform.position.y, player.position.z);
-
+        transform.LookAt(player);
         transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
 	}
 
     private void AttackPlayer()
 	{
-        //Stop moving !
+        
         transform.LookAt(player);
 
         if (!alreadyAttacked)
@@ -99,7 +101,7 @@ public class EnemyAI : MonoBehaviour
             //Attack Content ! 
             Rigidbody rb = Instantiate(attackPrefab, firePoint.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * .5f, ForceMode.Impulse);
+            //rb.AddForce(transform.up * .5f, ForceMode.Impulse);
 
 
             alreadyAttacked = true;
@@ -114,12 +116,14 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmos()
 	{
+        //View & Attack Range
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.DrawSphere(firePoint.position, .2f);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, viewRange);
 
+        //Paths and Waypoints
         if (localWaypoints != null)
 		{
             Vector3 startPosition = (Application.isPlaying) ? globalWaypoints[0] : localWaypoints[0] + transform.position;
