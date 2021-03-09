@@ -32,6 +32,8 @@ public class SpellShooter : MonoBehaviour
     [Header("Spell Feedback")]
     public GameObject DeconstructReadyFeedback;
     public GameObject InstructReadyFeedback;
+    bool deconstructReady;
+    bool instructReady;
 
 
     private void Start()
@@ -44,6 +46,18 @@ public class SpellShooter : MonoBehaviour
 	void Update()
     {
         if (!moveDatas.canSpell) return;
+
+        if (DeconstructSpell.TimeToFire <= Time.time && !deconstructReady)
+		{
+            DeconstructReadyFeedback.GetComponent<ParticleSystem>().Play();
+            deconstructReady = true;
+		}
+
+        if (InstructSpell.TimeToFire <= Time.time && !instructReady)
+        {
+            InstructReadyFeedback.GetComponent<ParticleSystem>().Play();
+            instructReady = true;
+        }
 
 
         if (Input.GetKey(KeyCode.Alpha1) && globalTimeToSpell < Time.time)
@@ -72,9 +86,11 @@ public class SpellShooter : MonoBehaviour
         if (firepoint == LFirePoint)
 		{
             animationController.SetLeftSpell();
+            deconstructReady = false;
 		} else
 		{
             animationController.SetRightSpell();
+            instructReady = false;
 		}
 
         //Update global timer

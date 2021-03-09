@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     public int currentHealth;
 
     public Transform HealthBar;
+    public Material[] EmptyMoonMaterials;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class Health : MonoBehaviour
     public void TakeDamage()
 	{
         currentHealth--;
-        HealthBar.GetChild(currentHealth).gameObject.SetActive(false);
+        HealthBar.GetChild(currentHealth).gameObject.GetComponent<MeshRenderer>().material = EmptyMoonMaterials[currentHealth];
 
 
         if (currentHealth == 0)

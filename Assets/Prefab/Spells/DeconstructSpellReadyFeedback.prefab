@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2567066224625686671}
   - component: {fileID: 2567066224625686668}
   m_Layer: 0
-  m_Name: SpellReadyFeedback
+  m_Name: DeconstructSpellReadyFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.08
       minScalar: 0.01
       maxCurve:
         serializedVersion: 2
