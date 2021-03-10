@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spell
+  - GameManager
   layers:
   - Default
   - TransparentFX
