@@ -407,8 +407,8 @@ MonoBehaviour:
   instructHP: 3
   instructColor: {r: 0.003921569, g: 0.92156863, b: 1, a: 255}
   FreeEntityPrefab: {fileID: 1723946244249257667, guid: 71b4b05e48dbc0b4cac9b9ecf48ca5e0, type: 3}
-  FreeFXPrefab: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
-  MalveillantFXPrefab: {fileID: 0}
+  FreeFXPrefab: {fileID: 2567066224625686669, guid: 2117ddabc68c35d42985fe5d4f223686, type: 3}
+  MalveillantFXPrefab: {fileID: 667810020178563759, guid: bb1d28d8e950101408b43685471a97bf, type: 3}
 --- !u!114 &8609688260944144647
 MonoBehaviour:
   m_ObjectHideFlags: 0
