@@ -136,7 +136,8 @@ public class DialogueManager : Interactable
 	{
         int c = 255 * auraAmount / 100;
         auraColor = new Color(c, c, c, 1);
+        //Main
+        //meshRenderer.material.SetColor("Color_7d0a97e1d3a94d278b28b53ff0160b8b", auraColor);
         meshRenderer.material.SetColor("Color_3cd2912bd2dd485389e3a1a21e51c4b3", auraColor);
-        meshRenderer.material.SetColor("Color_7d0a97e1d3a94d278b28b53ff0160b8b", auraColor);
     }
 }

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 722244672038846382}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.011, y: 2.228, z: -0.006}
-  m_LocalScale: {x: 0.6, y: 0.8, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 2233394555328994484}
   m_RootOrder: 2
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722244672038846382}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -85115462736669755, guid: 9a26e147cea370b4e8792d6b8b941ff9, type: 3}
 --- !u!23 &722244672038846376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -864,6 +864,7 @@ MonoBehaviour:
   - {fileID: 2233394554907564626}
   auraAmount: 0
   meshRenderer: {fileID: 722244672038846376}
+  auraColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &4459724791867678178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1194,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e6e8e6fa99a52a84990d5e423a4a5e8b, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: e6e8e6fa99a52a84990d5e423a4a5e8b, type: 3}
       propertyPath: m_Materials.Array.data[0]

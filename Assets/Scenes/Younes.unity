@@ -223,46 +223,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 666261313176868968, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 666261313176868968, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846376, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846376, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846376, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846376, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Materials.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846377, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846377, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846377, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 722244672038846379, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -85115462736669755, guid: 9a26e147cea370b4e8792d6b8b941ff9, type: 3}
     - target: {fileID: 2233394555328994475, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
       propertyPath: m_Name
       value: NPC_Dialogue_Prefab
@@ -443,7 +403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 686401439686734188, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7
+      value: -29
       objectReference: {fileID: 0}
     - target: {fileID: 686401439686734188, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_LocalRotation.w
