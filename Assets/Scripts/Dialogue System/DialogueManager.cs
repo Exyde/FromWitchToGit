@@ -13,7 +13,8 @@ public class DialogueManager : Interactable
     private Message currentMessage;
     private bool isTalking = false;
 
-    [Header ("References")]
+    [Header("References")]
+    public GameObject DialoguesCanvas;
     public GameObject player;
     public GameObject dialogueUI;
     public MovementDatas moveDatas;
@@ -34,6 +35,8 @@ public class DialogueManager : Interactable
 
     void Start()
     {
+        DialoguesCanvas.SetActive(true);
+        player = GameObject.FindGameObjectWithTag("Player");
         dialogueUI.SetActive(false);
 
         npcNameText.text = npcName;

@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fed779123976c9499bb9f3f32999513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCursor: {fileID: 2800000, guid: c8ed185919a0a034d88a22ca4a95e5ae, type: 3}
+  dialogueCursor: {fileID: 2800000, guid: debf245053e39ba49816201072471714, type: 3}
   showCursor: 0
 --- !u!114 &1658855647607585542
 MonoBehaviour:
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.495283, g: 0.9464206, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -876,11 +876,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: fe470ee1e1b3f9b4f8c0b37cbb9aef42, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0

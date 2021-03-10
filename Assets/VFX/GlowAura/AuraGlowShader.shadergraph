@@ -74,6 +74,9 @@
         },
         {
             "m_Id": "df0b5fe34fd143b793aa0ecbd39ba2ff"
+        },
+        {
+            "m_Id": "3f9cbbcb6c2b4c2db7fb0419f0676e97"
         }
     ],
     "m_GroupDatas": [],
@@ -288,6 +291,9 @@
             },
             {
                 "m_Id": "6af5c8087f98411cbe6746c23208e670"
+            },
+            {
+                "m_Id": "3f9cbbcb6c2b4c2db7fb0419f0676e97"
             }
         ]
     },
@@ -1040,6 +1046,39 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "3f9cbbcb6c2b4c2db7fb0419f0676e97",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.Alpha",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "98f24f1e7b98491f9ba323eefb0a4361"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.Alpha"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "451a9bed280841e5af7c873230d41f56",
     "m_Group": {
         "m_Id": ""
@@ -1539,6 +1578,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "98f24f1e7b98491f9ba323eefb0a4361",
+    "m_Id": 0,
+    "m_DisplayName": "Alpha",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Alpha",
+    "m_StageCapability": 2,
+    "m_Value": 1.0,
+    "m_DefaultValue": 1.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "9aeffb8a73d04fe9ba0f9d3366573d5b",
     "m_Group": {
@@ -1633,7 +1687,7 @@
     "m_ActiveSubTarget": {
         "m_Id": "da058063321b4b7bb0f640b58e82eb01"
     },
-    "m_SurfaceType": 0,
+    "m_SurfaceType": 1,
     "m_AlphaMode": 0,
     "m_TwoSided": false,
     "m_AlphaClip": false,
