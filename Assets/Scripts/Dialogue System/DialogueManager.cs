@@ -31,6 +31,7 @@ public class DialogueManager : Interactable
     [Range (0, 100)]
     public int auraAmount = 50;
     public MeshRenderer meshRenderer;
+    public Color auraColor;
     #endregion
 
     void Start()
@@ -134,7 +135,8 @@ public class DialogueManager : Interactable
     void ComputeAuraColor()
 	{
         int c = 255 * auraAmount / 100;
-        Color col = new Color(c, c, c, 1);
-        meshRenderer.material.SetColor("Color_3cd2912bd2dd485389e3a1a21e51c4b3", col);
+        auraColor = new Color(c, c, c, 1);
+        meshRenderer.material.SetColor("Color_3cd2912bd2dd485389e3a1a21e51c4b3", auraColor);
+        meshRenderer.material.SetColor("Color_7d0a97e1d3a94d278b28b53ff0160b8b", auraColor);
     }
 }

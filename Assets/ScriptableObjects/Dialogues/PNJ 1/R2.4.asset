@@ -15,4 +15,4 @@ MonoBehaviour:
   response: "Oui. Ma famille est l\xE0-bas. Je suis en route pour rentrer chez moi.
     Je reviens de la capital pour commercer."
   nextMessage: {fileID: 11400000, guid: 8a51779d564b5864a9404f19979cc990, type: 2}
-  auraValue: 0
+  auraValue: 50

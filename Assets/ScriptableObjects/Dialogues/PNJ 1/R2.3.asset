@@ -15,4 +15,4 @@ MonoBehaviour:
   response: "Non, mais je travaille pour le saigneur de Tiercelieu qui administre
     ce village.\r\n\r\nJe dois enqu\xEAter sur une affaire importante."
   nextMessage: {fileID: 11400000, guid: b03c9fcca314e9d46bca7af143fcfe2c, type: 2}
-  auraValue: 0
+  auraValue: 70

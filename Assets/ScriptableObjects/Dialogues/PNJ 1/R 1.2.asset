@@ -15,4 +15,4 @@ MonoBehaviour:
   response: "Je viens de la capital. J'ai \xE9t\xE9 appel\xE9e par la milice pour
     aider \xE0 r\xE9soudre l'enqu\xEAte."
   nextMessage: {fileID: 11400000, guid: 2eab7275030677447a06f506610cd035, type: 2}
-  auraValue: 0
+  auraValue: 50
