@@ -77,8 +77,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assetPrefab: {fileID: 6323190126583167214, guid: 476411aba97dd534791cc9edd2c25a81, type: 3}
   largeur: 10
-  longueur: 1
-  offset: 11
+  longueur: 10
+  offset: 10
   randomScale: 1
   scaleBounds: {x: 0.8, y: 1.2}
   randomRotation: 1
