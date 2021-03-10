@@ -10,6 +10,7 @@ public class Sorcelable : MonoBehaviour
     public GameObject instructPanel;
     public GameObject moonContainerPrefab;
     public GameObject chainContainerPrefab;
+    public Sprite EyeOpenedTexture;
 
     public GameObject ChainDestructionPrefab;
     public GameObject EyeOpeningPrefab;
@@ -81,6 +82,7 @@ public class Sorcelable : MonoBehaviour
                 int childIndex = instructHP - 1;
 
                 //Add eye opening
+                instructPanel.transform.GetChild(childIndex).GetComponent<Image>().sprite = EyeOpenedTexture;
                 instructPanel.transform.GetChild(childIndex).GetComponent<Image>().color = instructColor;
                 Instantiate(EyeOpeningPrefab, transform.position, Quaternion.identity);
 
