@@ -18,6 +18,7 @@ public class DialogueManager : Interactable
     public GameObject player;
     public GameObject dialogueUI;
     public MovementDatas moveDatas;
+    Animator animator;
 
     [Space]
     [Header ("Npc Text Area")]
@@ -39,6 +40,7 @@ public class DialogueManager : Interactable
         DialoguesCanvas.SetActive(true);
         player = GameObject.FindGameObjectWithTag("Player");
         dialogueUI.SetActive(false);
+        animator = GetComponentInChildren<Animator>();
 
         npcNameText.text = npcName;
         currentMessage = startMessage;
@@ -72,7 +74,7 @@ public class DialogueManager : Interactable
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
+        animator.SetTrigger("Talking");
         UpdateDialogue();
     }
 
@@ -84,6 +86,8 @@ public class DialogueManager : Interactable
         dialogueUI.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        animator.SetTrigger("Idle");
+
     }
 
     void UpdateDialogue()

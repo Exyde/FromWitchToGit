@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Jean/2.For\xEAt A.unity"
     guid: 88f8605fab12e03488c4894ce5d774f8
+  - enabled: 1
+    path: Assets/Scenes/Jean/3.Village.unity
+    guid: 05dc61dc83251ea48a1216a3d5713a75
+  - enabled: 1
+    path: "Assets/Scenes/Jean/4.For\xEAt B.unity"
+    guid: 1b1804763955c664fa50c9c1e392ad83
   m_configObjects: {}

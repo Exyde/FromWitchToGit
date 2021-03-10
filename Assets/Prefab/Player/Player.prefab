@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionKey: 101
-  interactionDistance: 2
+  interactionDistance: 2.1
   interactionText: {fileID: 686401440475286533}
 --- !u!114 &1535279643
 MonoBehaviour:

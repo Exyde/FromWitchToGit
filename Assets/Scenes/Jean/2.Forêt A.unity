@@ -8767,7 +8767,7 @@ GameObject:
   m_Layer: 0
   m_Name: NextLevelTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16336,6 +16336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1687615819}
     m_Modifications:
+    - target: {fileID: 2233394555128292495, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2233394555328994475, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
       propertyPath: m_Name
       value: Garde 2
@@ -27418,6 +27422,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1687615819}
     m_Modifications:
+    - target: {fileID: 2233394555128292495, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2233394555328994475, guid: daee045718cad6e4eb16ea2157dcec48, type: 3}
       propertyPath: m_Name
       value: Garde 1
@@ -35301,7 +35309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1687615819
 Transform:
   m_ObjectHideFlags: 0
