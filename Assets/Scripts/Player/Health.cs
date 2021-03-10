@@ -26,6 +26,7 @@ public class Health : MonoBehaviour
             currentHealth--;
             HealthBar.GetChild(currentHealth).gameObject.GetComponent<MeshRenderer>().material = EmptyMoonMaterials[currentHealth];
         }
+
         if (currentHealth == 0)
 		{
             FindObjectOfType<GameManager>().HandleGameOver();
