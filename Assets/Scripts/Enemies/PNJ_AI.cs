@@ -39,9 +39,10 @@ public class PNJ_AI : MonoBehaviour
     void Start()
     {
         Animator anim = GetComponent<Animator>();
-        anim.SetBool("Running", running);
-        anim.SetBool("Walking", walking);
-        anim.SetBool("Idle", idle);
+
+        if (idle) anim.SetTrigger("Idle");
+        if (walking) anim.SetTrigger("Walking");
+        if (running) anim.SetTrigger("Running");
     }
 
     void Update()
