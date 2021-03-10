@@ -398,6 +398,7 @@ MonoBehaviour:
   moonContainerPrefab: {fileID: 7304071305775121395, guid: d9ceb199426e9ad4bbfa6a0a382ece8b, type: 3}
   chainContainerPrefab: {fileID: 1337165312829237051, guid: 2fb6629e76e85d2459b10e415c210958, type: 3}
   ChainDestructionPrefab: {fileID: 8498227463940890090, guid: b2ded6f7ba4a5e8448a30e0718f51ec4, type: 3}
+  EyeOpeningPrefab: {fileID: 2567066224625686669, guid: 2117ddabc68c35d42985fe5d4f223686, type: 3}
   offset: 1.5
   MaxDeconstructHP: 6
   deconstructHP: 0

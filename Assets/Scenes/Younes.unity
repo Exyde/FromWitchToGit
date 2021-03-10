@@ -730,6 +730,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: MaxDeconstructHP
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144653, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_Name
       value: EnemyTest

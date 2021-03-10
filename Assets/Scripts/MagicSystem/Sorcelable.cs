@@ -80,7 +80,10 @@ public class Sorcelable : MonoBehaviour
                 instructHP++;
                 int childIndex = instructHP - 1;
 
+                //Add eye opening
                 instructPanel.transform.GetChild(childIndex).GetComponent<Image>().color = instructColor;
+                Instantiate(EyeOpeningPrefab, transform.position, Quaternion.identity);
+
 
                 if (instructHP == MaxInstructHP)
 				{
