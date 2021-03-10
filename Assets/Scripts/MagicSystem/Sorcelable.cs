@@ -12,6 +12,8 @@ public class Sorcelable : MonoBehaviour
     public GameObject chainContainerPrefab;
 
     public GameObject ChainDestructionPrefab;
+    public GameObject EyeOpeningPrefab;
+
     public float offset = .8f;
 
     [Header("Deconstruct Data")]
@@ -19,14 +21,11 @@ public class Sorcelable : MonoBehaviour
     public int MaxDeconstructHP;
     public int deconstructHP;
 
-
     [Header("Instruct Data")]
     [Range(0, 6)]
     public int MaxInstructHP;
     public int instructHP;
     public Color instructColor = new Color(1, 235, 255, 255);
-
-
 
     [Header("Liberation References")]
     public GameObject FreeEntityPrefab;

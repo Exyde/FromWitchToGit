@@ -474,6 +474,12 @@ MonoBehaviour:
   LunarSpell: {fileID: 11400000, guid: 1c224044d5ba8fb40b25dcb558f9a583, type: 2}
   DeconstructReadyFeedback: {fileID: 356278742}
   InstructReadyFeedback: {fileID: 4450465470489563275}
+  InstructSpellUI: {fileID: 5250796221198237613}
+  DeconstructSpellUI: {fileID: 3148689390882174693}
+  InstructCoolDownMaterial: {fileID: 2100000, guid: 838472323614df146afc1c26eb30382f, type: 2}
+  InstructReadyMaterial: {fileID: 2100000, guid: 1922db2073bee9142b26bb9b1e9632bc, type: 2}
+  DeconstructCoolDownMaterial: {fileID: 2100000, guid: d59c407c1e16f2641bfc5b1dee7bf30e, type: 2}
+  DeconstructReadyMaterial: {fileID: 2100000, guid: 056cdc9df703f0b48a13cb6f0359528b, type: 2}
 --- !u!114 &686401439686734161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,6 +540,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a08d29f0e3a5a23469ab113665160b65, type: 2}
   - {fileID: 2100000, guid: fb22648162cf3ea40aea659695fbdf4e, type: 2}
   - {fileID: 2100000, guid: f4891529979bb5e469ea164f0e4b94f3, type: 2}
+  immortal: 1
 --- !u!1 &686401439848804752
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3222,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d5904e94f3f1c64aada17f8b7a751ab, type: 3}
+--- !u!1 &3148689390882174693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d5904e94f3f1c64aada17f8b7a751ab, type: 3}
+  m_PrefabInstance: {fileID: 2842630635080616884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2376129277421874271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d5904e94f3f1c64aada17f8b7a751ab, type: 3}
@@ -3296,5 +3308,10 @@ PrefabInstance:
 --- !u!4 &4869873319447078167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d5904e94f3f1c64aada17f8b7a751ab, type: 3}
+  m_PrefabInstance: {fileID: 4908917572364583676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5250796221198237613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d5904e94f3f1c64aada17f8b7a751ab, type: 3}
   m_PrefabInstance: {fileID: 4908917572364583676}
   m_PrefabAsset: {fileID: 0}

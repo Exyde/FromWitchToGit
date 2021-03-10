@@ -32,6 +32,14 @@ public class SpellShooter : MonoBehaviour
     [Header("Spell Feedback")]
     public GameObject DeconstructReadyFeedback;
     public GameObject InstructReadyFeedback;
+    public GameObject InstructSpellUI;
+    public GameObject DeconstructSpellUI;
+
+    public Material InstructCoolDownMaterial;
+    public Material InstructReadyMaterial;
+    public Material DeconstructCoolDownMaterial;
+    public Material DeconstructReadyMaterial;
+
     bool deconstructReady;
     bool instructReady;
 
@@ -50,12 +58,15 @@ public class SpellShooter : MonoBehaviour
         if (DeconstructSpell.TimeToFire <= Time.time && !deconstructReady)
 		{
             DeconstructReadyFeedback.GetComponent<ParticleSystem>().Play();
+            DeconstructSpellUI.GetComponent<MeshRenderer>().material = DeconstructReadyMaterial;
             deconstructReady = true;
 		}
 
         if (InstructSpell.TimeToFire <= Time.time && !instructReady)
         {
             InstructReadyFeedback.GetComponent<ParticleSystem>().Play();
+            InstructSpellUI.GetComponent<MeshRenderer>().material = InstructReadyMaterial;
+
             instructReady = true;
         }
 
@@ -87,11 +98,14 @@ public class SpellShooter : MonoBehaviour
 		{
             animationController.SetLeftSpell();
             deconstructReady = false;
-		} else
+            DeconstructSpellUI.GetComponent<MeshRenderer>().material = DeconstructCoolDownMaterial;
+        }
+        else
 		{
             animationController.SetRightSpell();
             instructReady = false;
-		}
+            InstructSpellUI.GetComponent<MeshRenderer>().material = InstructCoolDownMaterial;
+        }
 
         //Update global timer
         globalTimeToSpell = Time.time + globalCooldown;
