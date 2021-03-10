@@ -122,6 +122,8 @@ public class Sorcelable : MonoBehaviour
 
         Instantiate(FreeEntityPrefab, transform.position, FreeEntityPrefab.transform.rotation);
         Instantiate(FreeFXPrefab, transform.position, Quaternion.identity);
+        Instantiate(MalveillantFXPrefab, transform.position, MalveillantFXPrefab.transform.rotation);
+
         Destroy(this.gameObject);
 	}
 }
