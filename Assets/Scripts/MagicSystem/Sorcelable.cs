@@ -71,7 +71,12 @@ public class Sorcelable : MonoBehaviour
 
                 Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
-			}
+
+                if (deconstructHP == 0 && instructHP == 0)
+				{
+                    StartCoroutine(FreeEntity());
+                }
+            }
         }
         // Instruct Spell - Second Health Bar
         else if (spell.Instruct)
