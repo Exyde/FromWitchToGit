@@ -83,7 +83,6 @@ public class Sorcelable : MonoBehaviour
                 audioSource.clip = feedbacks[Random.Range(0, feedbacks.Length)];
                 audioSource.Play();
 
-
                 if (deconstructHP == 0 && instructHP == MaxInstructHP)
 				{
                     StartCoroutine(FreeEntity());
