@@ -18,7 +18,7 @@ public class Cheats : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            transform.position = Entity.transform.position + new Vector3(2, 2, 2);
+ 
         }
 
         if (Input.GetKeyDown(KeyCode.Y))
