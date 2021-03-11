@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 
     // Documentation : https://www.youtube.com/watch?v=UjkSFoLxesw - Dave, Gamedev
     // Documentation : https://www.youtube.com/watch?v=z20wHJSXk98&t=246s - Lague Platformer
+    // Doc : https://www.youtube.com/watch?v=jUdx_Nj4Xk0 - Stealth Lague
 
     Transform player;
 
