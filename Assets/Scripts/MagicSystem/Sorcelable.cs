@@ -72,7 +72,7 @@ public class Sorcelable : MonoBehaviour
                 Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
 
-                if (deconstructHP == 0 && instructHP == 0)
+                if (deconstructHP == 0 && instructHP == MaxInstructHP)
 				{
                     StartCoroutine(FreeEntity());
                 }

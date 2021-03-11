@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63405cf4acb529458d5fde53deaecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lg: {fileID: 0}
+  Entity: {fileID: 0}
   moveDatas: {fileID: 11400000, guid: 6ce7674be72ebb94f9d7ea548723df8d, type: 2}
 --- !u!114 &686401439686734160
 MonoBehaviour:
@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37e9e345eb385f46bf0d9849502317d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerCanvas: {fileID: 686401440447473788}
   interactionKey: 101
   interactionDistance: 2.1
   interactionText: {fileID: 686401440475286533}
@@ -540,7 +541,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a08d29f0e3a5a23469ab113665160b65, type: 2}
   - {fileID: 2100000, guid: fb22648162cf3ea40aea659695fbdf4e, type: 2}
   - {fileID: 2100000, guid: f4891529979bb5e469ea164f0e4b94f3, type: 2}
-  immortal: 1
+  immortal: 0
 --- !u!1 &686401439848804752
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &686401440447473760
 RectTransform:
   m_ObjectHideFlags: 0

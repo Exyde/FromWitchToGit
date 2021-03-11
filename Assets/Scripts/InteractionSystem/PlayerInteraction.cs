@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public GameObject PlayerCanvas;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionDistance;
     public Text interactionText;
@@ -13,6 +14,7 @@ public class PlayerInteraction : MonoBehaviour
     void Start()
     {
         mainCam = GetComponentInChildren<Camera>();
+        PlayerCanvas.SetActive(true);
     }
 
     void Update()
