@@ -19,7 +19,6 @@ public class OnTriggerVoiceLine : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player" && !hasPlayed)
 		{
-			//AudioSource.Play(clip);
 			source.Play();
 			hasPlayed = true;
 		}
