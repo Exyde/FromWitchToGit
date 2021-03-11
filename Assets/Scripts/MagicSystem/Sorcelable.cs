@@ -33,6 +33,12 @@ public class Sorcelable : MonoBehaviour
     public GameObject FreeFXPrefab;
     public GameObject MalveillantFXPrefab;
 
+    [Header("Audio Feedback")]
+    public AudioClip[] feedbacks;
+
+    AudioSource audioSource;
+
+
     void Start()
     {
         //Setup both hp values
@@ -42,6 +48,8 @@ public class Sorcelable : MonoBehaviour
         //Create the UI Bar Elements
         CreateContainerUI(moonContainerPrefab, instructPanel.transform, MaxInstructHP);
         CreateContainerUI(chainContainerPrefab, deconstructPanel.transform, MaxDeconstructHP);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void CreateContainerUI(GameObject container, Transform parent, int maxHp)
@@ -71,6 +79,10 @@ public class Sorcelable : MonoBehaviour
 
                 Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
+
+                audioSource.clip = feedbacks[Random.Range(0, feedbacks.Length)];
+                audioSource.Play();
+
 
                 if (deconstructHP == 0 && instructHP == MaxInstructHP)
 				{
