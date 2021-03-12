@@ -70,7 +70,6 @@ public class SpellShooter : MonoBehaviour
             instructReady = true;
         }
 
-
         if (Input.GetKey(KeyCode.Alpha1) && globalTimeToSpell < Time.time)
         {
             ShootSpellSO(InstructSpell, LFirePoint);

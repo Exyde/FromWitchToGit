@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Cheats : MonoBehaviour
 {
-    public GameObject Entity;
+    public Transform Entity;
 
     public MovementDatas moveDatas;
     // Cheat Class : Remove for build
@@ -18,7 +18,7 @@ public class Cheats : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
- 
+            transform.position = Entity.position + new Vector3(.5f, .5f ,.5f);
         }
 
         if (Input.GetKeyDown(KeyCode.Y))
