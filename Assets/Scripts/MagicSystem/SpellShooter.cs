@@ -73,12 +73,12 @@ public class SpellShooter : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Alpha1) && globalTimeToSpell < Time.time)
         {
-            ShootSpellSO(DeconstructSpell, LFirePoint);
+            ShootSpellSO(InstructSpell, LFirePoint);
         }
 
         if (Input.GetKey(KeyCode.Alpha2) && globalTimeToSpell < Time.time)
         {
-            ShootSpellSO(InstructSpell, RFirePoint);
+            ShootSpellSO(DeconstructSpell, RFirePoint);
         }
 
         if (Input.GetKey(KeyCode.Alpha3) && globalTimeToSpell < Time.time)
@@ -97,14 +97,15 @@ public class SpellShooter : MonoBehaviour
         if (firepoint == LFirePoint)
 		{
             animationController.SetLeftSpell();
-            deconstructReady = false;
-            DeconstructSpellUI.GetComponent<MeshRenderer>().material = DeconstructCoolDownMaterial;
+            instructReady = false;
+            InstructSpellUI.GetComponent<MeshRenderer>().material = InstructCoolDownMaterial;
         }
         else
 		{
             animationController.SetRightSpell();
-            instructReady = false;
-            InstructSpellUI.GetComponent<MeshRenderer>().material = InstructCoolDownMaterial;
+            deconstructReady = false;
+            DeconstructSpellUI.GetComponent<MeshRenderer>().material = DeconstructCoolDownMaterial;
+
         }
 
         //Update global timer
