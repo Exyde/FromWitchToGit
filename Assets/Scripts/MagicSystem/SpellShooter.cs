@@ -28,6 +28,7 @@ public class SpellShooter : MonoBehaviour
     public Spell DeconstructSpell;
     public Spell InstructSpell;
     public Spell LunarSpell;
+    public bool deconstructSpellUnlocked = false;
 
     [Header("Spell Feedback")]
     public GameObject DeconstructReadyFeedback;
@@ -49,6 +50,8 @@ public class SpellShooter : MonoBehaviour
         animationController = GetComponent<AnimationController>();
         DeconstructSpell.TimeToFire = InstructSpell.TimeToFire = LunarSpell.TimeToFire = 0;
         globalTimeToSpell = 0;
+
+        DeconstructSpellUI.SetActive(deconstructSpellUnlocked);
 	}
 
 	void Update()
@@ -75,7 +78,7 @@ public class SpellShooter : MonoBehaviour
             ShootSpellSO(InstructSpell, LFirePoint);
         }
 
-        if (Input.GetKey(KeyCode.Alpha2) && globalTimeToSpell < Time.time)
+        if (Input.GetKey(KeyCode.Alpha2) && globalTimeToSpell < Time.time && deconstructSpellUnlocked)
         {
             ShootSpellSO(DeconstructSpell, RFirePoint);
         }
@@ -163,5 +166,11 @@ public class SpellShooter : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(LFirePoint.transform.position, .1f);
         Gizmos.DrawWireSphere(RFirePoint.transform.position, .1f);
+    }
+
+    public void UnlockDeconstruct()
+    {
+        deconstructSpellUnlocked = true;
+        DeconstructSpellUI.SetActive(true);
     }
 }
