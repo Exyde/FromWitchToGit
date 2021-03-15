@@ -121,6 +121,7 @@ public class BossAI : MonoBehaviour
     private void ResetAttack()
 	{
         alreadyAttacked = false;
+        animator.SetTrigger("Patrol");
 	}
 
     private void OnDrawGizmos()
