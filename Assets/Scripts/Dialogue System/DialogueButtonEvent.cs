@@ -43,7 +43,7 @@ public class DialogueButtonEvent : MonoBehaviour, IPointerClickHandler, IPointer
     public void OnPointerExit(PointerEventData eventData)
     {
         Color c = GetComponent<Text>().color;
-        c.a = .2f;
+        c.a = .7f;
 
         GetComponent<Text>().color = c;
     }
