@@ -41,12 +41,12 @@ public class Health : MonoBehaviour
 
             if (currentHealth == 2)
             {
-                vignette.intensity.value = .4f;
+                vignette.intensity.value = .6f;
             }
 
             if (currentHealth == 1)
             {
-                vignette.intensity.value = .65f;
+                vignette.intensity.value = .9f;
             }
         }
 
