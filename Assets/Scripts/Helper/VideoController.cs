@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 public class VideoController : MonoBehaviour
 {
     public float startDelay = 1.5f;
@@ -13,8 +14,6 @@ public class VideoController : MonoBehaviour
     private void Start()
     {
         timer = (float)Player.clip.length;
-        //Player = GetComponent<VideoPlayer>();
-        print(Player);
     }
 
     void Update()
@@ -32,7 +31,7 @@ public class VideoController : MonoBehaviour
 
         if (timer <= 0 && playing)
         {
-            //load next level
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         HandleInputs();
@@ -40,14 +39,14 @@ public class VideoController : MonoBehaviour
 
     public void HandleInputs()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            //Load levle
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            //Load levle
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }
