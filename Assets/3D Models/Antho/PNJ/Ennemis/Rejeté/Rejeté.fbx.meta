@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: c8ada28fea11654419692ec9d5164f34
+guid: 30024b72d26f88c47be61f73145c7999
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 3813493919021998499
-    second: Armature|Attaque
+      74: -6045563731388604958
+    second: Attaque
   - first:
-      74: 2196045979496877069
-    second: "Armature|D\xE9placement"
+      74: -4064313882409214759
+    second: "Rejet\xE9|Attaque"
   - first:
-      74: -8945691123924629249
-    second: Armature|Idle
+      74: -5967904245669906888
+    second: "Rejet\xE9|D\xE9placement"
   externalObjects: {}
   materials:
     materialImportMode: 2
