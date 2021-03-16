@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     GameObject player;
+    public MovementDatas moveDatas;
 
     public GameObject GameOverCanvas;
 
@@ -22,6 +23,19 @@ public class GameManager : MonoBehaviour
         GameOverCanvas.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        moveDatas.canMove = moveDatas.canSpell = false;  
+    }
+
+    public void HandleBucheronGameOver()
+    {
+        StartCoroutine(WaitAndGameOver());
+    }
+
+    IEnumerator WaitAndGameOver()
+    {
+        yield return new WaitForSeconds(2.5f);
+        HandleGameOver();
     }
 
     public void ReloadScene()

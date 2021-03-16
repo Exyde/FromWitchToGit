@@ -14,6 +14,7 @@ public class Cheats : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
 		{
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            FindObjectOfType<RandomizeMaterial>().RandomizeSkin();
 		}
 
         if (Input.GetKeyDown(KeyCode.T))

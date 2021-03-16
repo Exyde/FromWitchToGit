@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855081f96847ac846b6d9f0190e6f1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveDatas: {fileID: 11400000, guid: 6ce7674be72ebb94f9d7ea548723df8d, type: 2}
   GameOverCanvas: {fileID: 6162320587386629525}
 --- !u!1 &6162320587901401175
 GameObject:

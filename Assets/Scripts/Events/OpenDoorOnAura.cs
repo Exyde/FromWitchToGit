@@ -5,7 +5,7 @@ using UnityEngine;
 public class OpenDoorOnAura : MonoBehaviour
 {
     public GameObject guard;
-    public int auraTrigger = 75;
+    public int auraTrigger;
     DialogueManager dm;
 
     void Start()

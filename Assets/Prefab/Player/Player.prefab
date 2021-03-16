@@ -237,7 +237,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 695479645460642163, guid: 317ddf9d72e48cd478aff374aad56209, type: 3}
+  - {fileID: 2100000, guid: 546a8246dc143574cb8769f5b5401a05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 1535279643}
   - component: {fileID: 1658855647607585542}
   - component: {fileID: 1156524080}
+  - component: {fileID: 3819646927544882552}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -544,6 +545,20 @@ MonoBehaviour:
   - {fileID: 2100000, guid: fb22648162cf3ea40aea659695fbdf4e, type: 2}
   - {fileID: 2100000, guid: f4891529979bb5e469ea164f0e4b94f3, type: 2}
   immortal: 0
+--- !u!114 &3819646927544882552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686401439686734186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c6228546110b9419919f96e39df5fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smr: {fileID: 7703042377312634925}
+  skinDatas: {fileID: 11400000, guid: 9dc0db208fa6f1949ac6787bd039e076, type: 2}
 --- !u!1 &686401439848804752
 GameObject:
   m_ObjectHideFlags: 0

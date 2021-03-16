@@ -37,6 +37,8 @@ public class FPSController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         animatorController = GetComponent<AnimationController>();
+
+        moveDatas.canMove = moveDatas.canSpell = true;
     }
 
     void Update()

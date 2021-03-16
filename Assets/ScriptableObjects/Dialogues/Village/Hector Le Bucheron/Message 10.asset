@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endDialogue: 1
   message: "J'en suis s\xFBr maintenant vous en \xEAtes une ! Maudite soit la lune
-    !\r\n\rSale sorci\xE8re !"
+    !\r\n\rSale sorci\xE8re !\nGaaaaaaaaaaardes !"
   responses: []
