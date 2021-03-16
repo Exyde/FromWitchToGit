@@ -138,10 +138,11 @@ public class DialogueManager : Interactable
 
     void ComputeAuraColor()
 	{
-        int c = 255 * auraAmount / 100;
+        float c = 255 * auraAmount / 100.0f;
         auraColor = new Color(c, c, c, 1);
         //Main
         //meshRenderer.material.SetColor("Color_7d0a97e1d3a94d278b28b53ff0160b8b", auraColor);
+        //Glow
         meshRenderer.material.SetColor("Color_3cd2912bd2dd485389e3a1a21e51c4b3", auraColor);
     }
 }

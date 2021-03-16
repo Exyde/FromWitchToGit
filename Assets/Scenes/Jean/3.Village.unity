@@ -5540,6 +5540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Bucheron
       objectReference: {fileID: 0}
+    - target: {fileID: 6296497131285276316, guid: 5d8cd541011296e45a2c3c32a863d6ca, type: 3}
+      propertyPath: auraAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6296497131285276317, guid: 5d8cd541011296e45a2c3c32a863d6ca, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -6632,10 +6636,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3314142131469104202, guid: 96206e5935ec4144781467f68c512898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.676
+      objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139144, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_Name
       value: NPC_JeuneFemme
       objectReference: {fileID: 0}
+    - target: {fileID: 4108764476327139158, guid: 96206e5935ec4144781467f68c512898, type: 3}
+      propertyPath: auraAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108764476327139158, guid: 96206e5935ec4144781467f68c512898, type: 3}
+      propertyPath: startMessage
+      value: 
+      objectReference: {fileID: 11400000, guid: 28c984b1287dd914681d0c631ca73c67, type: 2}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_RootOrder
       value: 13

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
+  m_Name: Last message
+  m_EditorClassIdentifier: 
+  endDialogue: 1
+  message: "Ce qui est \xE9trange, c'est que cet homme qui \xE9tait tr\xE8s heureux
+    \xE0 l'id\xE9e du mariage, \xE0 subitement disparut il y a quelques jours.\r\n\r\nMais
+    pour \xEAtre honn\xEAte, cela m'arrange bien."
+  responses: []

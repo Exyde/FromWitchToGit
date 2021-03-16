@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
+  m_Name: Reponse 2
+  m_EditorClassIdentifier: 
+  response: "Bonjour, ne vous inqui\xE9tez pas pour moi, je sais me d\xE9brouiller
+    toute seule. Je voudrais savoir si vous aviez vu quelque chose d'\xE9trange aux
+    alentours  ?"
+  nextMessage: {fileID: 11400000, guid: bebbb9596f0722744b1da4db2dc94ff4, type: 2}
+  auraValue: 35

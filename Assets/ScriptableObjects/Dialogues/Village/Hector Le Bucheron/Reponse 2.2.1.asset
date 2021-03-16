@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
+  m_Name: Reponse 2.2.1
+  m_EditorClassIdentifier: 
+  response: "Moi, une sorci\xE8re ? Dans ce cas, monsieur, prenez garde \xE0 ce que
+    je ne vous transforme pas en porc."
+  nextMessage: {fileID: 11400000, guid: c91da1e312f4bd845b3d49fbf8ba1dec, type: 2}
+  auraValue: 10

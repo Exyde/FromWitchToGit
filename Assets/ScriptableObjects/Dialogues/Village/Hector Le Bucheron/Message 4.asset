@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
+  m_Name: Message 4
+  m_EditorClassIdentifier: 
+  endDialogue: 0
+  message: "Je vois, les sacrifices des hommes pour prot\xE9ger le peuple... Je comprends
+    bien."
+  responses:
+  - {fileID: 11400000, guid: 4495d1923cad3ca4e942e87c7e5700ba, type: 2}

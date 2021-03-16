@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
+  m_Name: Reponse 2.2.2
+  m_EditorClassIdentifier: 
+  response: "Je ne vois pas du tout de quoi vous parler monsieur, vous faites erreur,
+    je ne suis pas une sorci\xE8re."
+  nextMessage: {fileID: 11400000, guid: 3b3c8177ff92b3c429ad5f58e9c338c0, type: 2}
+  auraValue: 0

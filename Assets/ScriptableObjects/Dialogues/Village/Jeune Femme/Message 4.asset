@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc7ea5488aef7d4babc0606a71d7d6b, type: 3}
+  m_Name: Message 4
+  m_EditorClassIdentifier: 
+  endDialogue: 0
+  message: "Oui, exactement. Je ne connais pas cet homme, ce mariage est arrang\xE9
+    pour faciliter les relations entre les villages de la for\xEAt. Mais moi, je
+    n'ai rien \xE0 voir avec tout cela. j'ai l'impression d'\xEAtre une ch\xE8vre
+    que l'on vend sur un march\xE9."
+  responses:
+  - {fileID: 11400000, guid: 59313530b3686e24886b28d74dc4c203, type: 2}
