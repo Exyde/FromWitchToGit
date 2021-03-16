@@ -26,6 +26,7 @@ public class EnemyAI : MonoBehaviour
     [Header("Attacking")]
     public float timeBtwAttack;
     bool alreadyAttacked;
+    public float projectileSpeed;
     public Transform firePoint;
     public GameObject attackPrefab;
 
@@ -38,6 +39,10 @@ public class EnemyAI : MonoBehaviour
     [Header("Debug")]
     public bool playerInView;
     public bool playerInAttackRange;
+
+    Animator animator;
+
+    bool patroling = false;
 
     private void Awake()
 	{
@@ -56,6 +61,8 @@ public class EnemyAI : MonoBehaviour
         targetWaypointIndex = 1;
         targetWaypoint = globalWaypoints[targetWaypointIndex];
         targetWaypoint.y = transform.position.y;
+
+        animator = GetComponentInChildren<Animator>();
 	}
 
     void Update()
@@ -71,6 +78,12 @@ public class EnemyAI : MonoBehaviour
 
     private void Patroling()
 	{
+        if (!patroling)
+        {
+            patroling = true;
+            animator.SetTrigger("Patrol");
+        }
+
        //Move to waypoints -- Add a check for tree ?
        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
        transform.LookAt(targetWaypoint);
@@ -94,14 +107,23 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackPlayer()
 	{
-        
+        patroling = false;
         transform.LookAt(player);
 
         if (!alreadyAttacked)
 		{
+            int i = Random.Range(0, 2);
+            if (i == 0)
+            {
+                animator.SetTrigger("Attack1");
+            } else
+            {
+                animator.SetTrigger("Attack2");
+            }
+
             //Attack Content ! 
             Rigidbody rb = Instantiate(attackPrefab, firePoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
             //rb.AddForce(transform.up * .5f, ForceMode.Impulse);
 
 

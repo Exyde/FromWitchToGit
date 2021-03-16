@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        moveDatas.canMove = moveDatas.canSpell = false;  
+        moveDatas.canMove = moveDatas.canSpell = false;
+        player.GetComponent<RandomizeMaterial>().RandomizeSkin();
     }
 
     public void HandleBucheronGameOver()
