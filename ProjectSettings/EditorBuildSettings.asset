@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Jean/MainMenu.unity
+    guid: 890f1cd4773b1804094af6a2b20cd069
+  - enabled: 1
+    path: Assets/Scenes/Jean/Cinematic.unity
+    guid: 67863a9295d97d44893e3bc5f06dc239
+  - enabled: 1
     path: "Assets/Scenes/Jean/2.For\xEAt A.unity"
     guid: 88f8605fab12e03488c4894ce5d774f8
   - enabled: 1
