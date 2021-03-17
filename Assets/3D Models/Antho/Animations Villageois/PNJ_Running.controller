@@ -11,18 +11,15 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1078676021761678880}
-    m_Position: {x: 870, y: 60, z: 0}
+    m_Position: {x: 850, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1552163721682919789}
     m_Position: {x: 830, y: -140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2807939003352899660}
-    m_Position: {x: 850, y: -72, z: 0}
+    m_Position: {x: 860, y: 0, z: 0}
   m_ChildStateMachines: []
-  m_AnyStateTransitions:
-  - {fileID: 5762914273898209070}
-  - {fileID: 110694150064545167}
-  - {fileID: -1643062335052993281}
+  m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -88,7 +85,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PNJ_Animator_NO_DIALOGUE
+  m_Name: PNJ_Running
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Idle
