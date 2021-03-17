@@ -8,7 +8,6 @@ public class StelarSpellInteract : Interactable
     public bool examined = false;
 
     public GameObject SpellPanel;
-    public GameObject vfx;
     void Start()
     {
         SpellPanel.SetActive(false);
@@ -26,12 +25,10 @@ public class StelarSpellInteract : Interactable
         {
             SpellPanel.SetActive(true);
             examined = true;
-            vfx.SetActive(false);
         } else if (examined)
         {
             SpellPanel.SetActive(false);
             examined = false;
-            vfx.SetActive(true);
         }
 
     }

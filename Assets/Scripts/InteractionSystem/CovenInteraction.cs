@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CovenInteraction : Interactable
 {
@@ -12,6 +13,14 @@ public class CovenInteraction : Interactable
     public AudioClip clipA, clipB;
 
     SpellShooter spellShooter;
+
+    public GameObject moon;
+    public GameObject spellPanel;
+    public Material updatedMoonMat;
+    public Sprite updatedSpellTexture;
+    public GameObject VFX;
+
+    public ParticleSystem cinematicExplosionVFX;
 
     private void Start()
     {
@@ -53,5 +62,12 @@ public class CovenInteraction : Interactable
         //Cinematic end
         moveDatas.canMove = moveDatas.canSpell = true;
         spellShooter.UnlockDeconstruct();
+        cinematicExplosionVFX.Play();
+
+        moon.GetComponent<MeshRenderer>().material = updatedMoonMat;
+        VFX.SetActive(true);
+        spellPanel.GetComponent<Image>().sprite = updatedSpellTexture;
+
+        //spellShooter.transform.LookAt(moon.gameObject.transform);
     }
 }

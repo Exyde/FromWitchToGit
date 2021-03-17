@@ -7,6 +7,7 @@ TagManager:
   - Spell
   - GameManager
   - PostProcessing
+  - Boss
   layers:
   - Default
   - TransparentFX

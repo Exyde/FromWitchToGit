@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         moveDatas.canMove = moveDatas.canSpell = false;
+        FindObjectOfType<BossAI>().gameObject.SetActive(false);
 
     }
 }
