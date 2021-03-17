@@ -32,6 +32,7 @@ public class Sorcelable : MonoBehaviour
     public GameObject FreeEntityPrefab;
     public GameObject FreeFXPrefab;
     public GameObject MalveillantFXPrefab;
+    public bool boss = false;
 
     [Header("Audio Feedback")]
     public AudioClip[] feedbacks;
@@ -105,7 +106,8 @@ public class Sorcelable : MonoBehaviour
 
                 if (instructHP == MaxInstructHP)
 				{
-                    StartCoroutine(FreeEntity());
+                    if (boss) FindObjectOfType<GameManager>().HandleGameEnd();
+                    else StartCoroutine(FreeEntity());
 				}
 			}
         }

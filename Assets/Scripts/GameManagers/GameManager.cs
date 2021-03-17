@@ -11,11 +11,13 @@ public class GameManager : MonoBehaviour
     public MovementDatas moveDatas;
 
     public GameObject GameOverCanvas;
+    public GameObject GameWinCanvas;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         GameOverCanvas.SetActive(false);
+        GameWinCanvas.SetActive(false);
     }
 
 	public void HandleGameOver()
@@ -43,5 +45,17 @@ public class GameManager : MonoBehaviour
 	{
         print("Reloading scene");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void HandleGameEnd()
+    {
+        //Fade screen to black, play music, display text.
+        //Coroutines
+        //Disable loose canvas aswell ?
+        GameWinCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        moveDatas.canMove = moveDatas.canSpell = false;
+
     }
 }
