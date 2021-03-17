@@ -47,7 +47,8 @@ public class PNJ_AI : MonoBehaviour
 
     void Update()
     {
-        Patroling();
+        if (running)
+            Patroling();
     }
 
     private void Patroling()
