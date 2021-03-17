@@ -51,13 +51,14 @@ public class CovenInteraction : Interactable
         audioSource.Play();
         yield return new WaitForSeconds(clipA.length + 1f);
 
+        VFX.SetActive(true);
+
         //Sequence B
         audioSource.clip = clipB;
         audioSource.Play();
         yield return new WaitForSeconds(clipB.length + 1f);
 
 
-        //Set active on the correct Stell
 
         //Cinematic end
         moveDatas.canMove = moveDatas.canSpell = true;
@@ -65,7 +66,6 @@ public class CovenInteraction : Interactable
         cinematicExplosionVFX.Play();
 
         moon.GetComponent<MeshRenderer>().material = updatedMoonMat;
-        VFX.SetActive(true);
         spellPanel.GetComponent<Image>().sprite = updatedSpellTexture;
 
         //spellShooter.transform.LookAt(moon.gameObject.transform);
