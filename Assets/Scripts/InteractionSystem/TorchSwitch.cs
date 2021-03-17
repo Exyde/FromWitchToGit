@@ -21,8 +21,8 @@ public class TorchSwitch : Interactable
 
 	public override string GetDescription()
 	{
-        if (isOn) return "Press [E] to turn <color=red> off </color> the torch.";
-        return "Press [E] to turn <color=green> on </color> the torch.";
+        if (isOn) return "Eteindre [E]";
+        return "Allumer [E]";
 	}
 
 	public override void Interact()

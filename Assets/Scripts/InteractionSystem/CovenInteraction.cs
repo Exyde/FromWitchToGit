@@ -58,8 +58,6 @@ public class CovenInteraction : Interactable
         audioSource.Play();
         yield return new WaitForSeconds(clipB.length + 1f);
 
-
-
         //Cinematic end
         moveDatas.canMove = moveDatas.canSpell = true;
         spellShooter.UnlockDeconstruct();
@@ -69,5 +67,6 @@ public class CovenInteraction : Interactable
         spellPanel.GetComponent<Image>().sprite = updatedSpellTexture;
 
         //spellShooter.transform.LookAt(moon.gameObject.transform);
+        ///spellShooter.GetComponent<Health>().currentHealth = 3;
     }
 }

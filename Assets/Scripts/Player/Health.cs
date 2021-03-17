@@ -26,7 +26,6 @@ public class Health : MonoBehaviour
         if (volume.profile.TryGet<Vignette>(out tmp)){
             vignette = tmp;
             vignette.intensity.value = .05f;
-
         }
     }
 
