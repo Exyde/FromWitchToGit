@@ -12958,6 +12958,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: localWaypoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -14983,6 +14987,10 @@ PrefabInstance:
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: localWaypoints.Array.size
@@ -24398,7 +24406,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 686401439686734160, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: deconstructSpellUnlocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 686401439686734186, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_Name
@@ -37421,6 +37429,10 @@ PrefabInstance:
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: localWaypoints.Array.size
