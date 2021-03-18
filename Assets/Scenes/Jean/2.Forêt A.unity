@@ -17842,6 +17842,22 @@ PrefabInstance:
       propertyPath: MaxDeconstructHP
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: instructFeedbacksAudio.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: deconstructFeedbacksAudio.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: instructFeedbacksAudio.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7db00eb6e09abde42a3b3f696628be81, type: 3}
+    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: deconstructFeedbacksAudio.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 209f24e2197b5f648af0cfeb7fb4c646, type: 3}
     - target: {fileID: 8609688260944144653, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_Name
       value: "Rejet\xE9 2"
