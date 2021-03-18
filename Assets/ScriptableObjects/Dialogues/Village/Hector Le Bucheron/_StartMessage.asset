@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: _StartMessage
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 1c75c32acd371ad4994dfc23f4b3c500, type: 3}
   message: Bonjour ma petite dame, restez pas par ici, vous pourriez vous blesser.
   responses:
   - {fileID: 11400000, guid: 5ec4c82c23b4a4844b7647b2470732ad, type: 2}

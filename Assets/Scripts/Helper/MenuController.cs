@@ -7,11 +7,6 @@ public class MenuController : MonoBehaviour
 {
     public GameObject menuPannel;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow))

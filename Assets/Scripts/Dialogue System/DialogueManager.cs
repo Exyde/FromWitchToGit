@@ -93,8 +93,6 @@ public class DialogueManager : Interactable
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator.SetTrigger("Idle");
-
-
     }
 
     void UpdateDialogue()

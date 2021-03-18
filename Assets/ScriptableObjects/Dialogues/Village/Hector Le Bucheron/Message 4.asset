@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 4
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 446469d4c72afad4f9a8c5b1114ba712, type: 3}
   message: "Je vois, les sacrifices des hommes pour prot\xE9ger le peuple... Je comprends
     bien."
   responses:
