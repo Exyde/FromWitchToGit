@@ -258,9 +258,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ayant eut une prise conscience, le jeune homme lib\xE9r\xE9 d\xE9cida
-    de ne plus se marier avec la jeune femme, et commen\xE7a un long processus de
-    remise en question sur la r\xE9alit\xE9 qui l\u2019entoure."
+  m_Text: "Ayant eut une prise conscience, le jeune homme lib\xE9r\xE9 commen\xE7a
+    un long processus de remise en question sur la r\xE9alit\xE9 qui l\u2019entoure..."
 --- !u!1 &3139969388776814163
 GameObject:
   m_ObjectHideFlags: 0
