@@ -18,6 +18,8 @@ public class PNJ_AI : MonoBehaviour
     Vector3 targetWaypoint;
     int targetWaypointIndex;
 
+    public bool drawGizmos = false;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -71,7 +73,7 @@ public class PNJ_AI : MonoBehaviour
     private void OnDrawGizmos()
     {
         //Paths and Waypoints
-        if (localWaypoints != null)
+        if (localWaypoints != null && drawGizmos)
         {
             Vector3 startPosition = (Application.isPlaying) ? globalWaypoints[0] : localWaypoints[0] + transform.position;
             Vector3 previousPosition = startPosition;

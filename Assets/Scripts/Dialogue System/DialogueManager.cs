@@ -74,6 +74,10 @@ public class DialogueManager : Interactable
         dialogueUI.SetActive(true);
         currentMessage = startMessage;
 
+
+        audioSource.clip = currentMessage.clip;
+        audioSource.Play();
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         animator.SetTrigger("Talking");
@@ -89,6 +93,7 @@ public class DialogueManager : Interactable
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator.SetTrigger("Idle");
+
 
     }
 
