@@ -7,7 +7,7 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Path Jean
-  m_DiffuseTexture: {fileID: 2800000, guid: f83ca69c79814614facd3e411af85776, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: 712e1a287a6febb468f027b649852b45, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 2, y: 2}
