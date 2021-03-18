@@ -35,7 +35,9 @@ public class Sorcelable : MonoBehaviour
     public bool boss = false;
 
     [Header("Audio Feedback")]
-    public AudioClip[] feedbacks;
+    public AudioClip[] deconstructFeedbacksAudio;
+    public AudioClip[] instructFeedbacksAudio;
+
 
     AudioSource audioSource;
 
@@ -81,7 +83,7 @@ public class Sorcelable : MonoBehaviour
                 Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
 
-                audioSource.clip = feedbacks[Random.Range(0, feedbacks.Length)];
+                audioSource.clip = deconstructFeedbacksAudio[Random.Range(0, deconstructFeedbacksAudio.Length)];
                 audioSource.Play();
 
                 if (deconstructHP == 0 && instructHP == MaxInstructHP)
@@ -102,6 +104,9 @@ public class Sorcelable : MonoBehaviour
                 instructPanel.transform.GetChild(childIndex).GetComponent<Image>().sprite = EyeOpenedTexture;
                 instructPanel.transform.GetChild(childIndex).GetComponent<Image>().color = instructColor;
                 Instantiate(EyeOpeningPrefab, transform.position, Quaternion.identity);
+
+                audioSource.clip = instructFeedbacksAudio[Random.Range(0, instructFeedbacksAudio.Length)];
+                audioSource.Play();
 
 
                 if (instructHP == MaxInstructHP)

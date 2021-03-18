@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverCanvas;
     public GameObject GameWinCanvas;
 
+    public Text GameOverText;
+
+    public Text[] citations;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -22,6 +26,8 @@ public class GameManager : MonoBehaviour
 
 	public void HandleGameOver()
 	{
+        int index = Random.Range(0, citations.Length);
+        GameOverText.text = citations[index].text;
         GameOverCanvas.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
