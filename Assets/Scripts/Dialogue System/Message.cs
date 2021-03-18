@@ -7,6 +7,7 @@ using UnityEngine;
 public class Message : ScriptableObject
 {
 	public bool endDialogue = false;
+    public AudioClip clip;
 
 	[TextArea (3, 25)]
 	public string message;

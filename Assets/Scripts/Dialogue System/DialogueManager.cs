@@ -18,6 +18,7 @@ public class DialogueManager : Interactable
     public GameObject player;
     public GameObject dialogueUI;
     public MovementDatas moveDatas;
+    AudioSource audioSource;
     Animator animator;
 
     [Space]
@@ -41,6 +42,7 @@ public class DialogueManager : Interactable
         player = GameObject.FindGameObjectWithTag("Player");
         dialogueUI.SetActive(false);
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         npcNameText.text = npcName;
         currentMessage = startMessage;
@@ -123,6 +125,9 @@ public class DialogueManager : Interactable
 	{
         currentMessage = newMessage;
         auraAmount = _auraAmount;
+
+        audioSource.clip = newMessage.clip;
+        audioSource.Play();
 
         ComputeAuraColor();
         //UpdateAura();
