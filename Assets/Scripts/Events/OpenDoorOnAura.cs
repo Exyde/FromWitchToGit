@@ -1,22 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenDoorOnAura : MonoBehaviour
 {
     public GameObject guard;
     public int auraTrigger;
-    DialogueManager dm;
+    private DialogueManager dm;
 
-    void Start()
+    private void Start()
     {
         dm = guard.GetComponent<DialogueManager>();
     }
 
-    void Update()
+    private void Update()
     {
-        if (dm.auraAmount >= auraTrigger){
+        if (dm.auraAmount >= auraTrigger)
+        {
             //Play Animation Open Door !
+            //GetComponent<Animator>().Set
             Destroy(this.gameObject);
         }
     }

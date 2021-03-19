@@ -427,14 +427,12 @@ MonoBehaviour:
   MaxInstructHP: 6
   instructHP: 3
   instructColor: {r: 0.003921569, g: 0.92156863, b: 1, a: 255}
-  FreeEntityPrefab: {fileID: 4890415357456005650, guid: 851045c2f7fd60c4099e2e5ed1cf4219, type: 3}
+  FreeEntityPrefab: {fileID: 6740468433621733478, guid: df3235dce4ef9bb48bcb650dbadb1749, type: 3}
   FreeFXPrefab: {fileID: 2567066224625686669, guid: 2117ddabc68c35d42985fe5d4f223686, type: 3}
   MalveillantFXPrefab: {fileID: 667810020178563759, guid: bb1d28d8e950101408b43685471a97bf, type: 3}
   boss: 0
-  feedbacks:
-  - {fileID: 8300000, guid: 535391bc7e3ccfb468a9b3ddc3c7bc9c, type: 3}
-  - {fileID: 8300000, guid: e92bf800ebd89dd44b84e563803680a9, type: 3}
-  - {fileID: 8300000, guid: 5495de198266b904aa9ba80d6dc0f29e, type: 3}
+  deconstructFeedbacksAudio: []
+  instructFeedbacksAudio: []
 --- !u!114 &8609688260944144647
 MonoBehaviour:
   m_ObjectHideFlags: 0
