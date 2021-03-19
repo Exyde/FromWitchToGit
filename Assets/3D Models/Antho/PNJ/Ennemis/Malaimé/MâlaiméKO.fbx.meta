@@ -2,7 +2,13 @@ fileFormatVersion: 2
 guid: a15b1531df188eb4c8f96b3724c9844e
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -1388440830091423144
+    second: Dormir
+  - first:
+      74: 2689718952612119173
+    second: "M\xE2laim\xE9KO.001|Dormir"
   externalObjects: {}
   materials:
     materialImportMode: 2
