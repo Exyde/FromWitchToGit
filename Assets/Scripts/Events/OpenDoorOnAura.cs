@@ -16,7 +16,7 @@ public class OpenDoorOnAura : MonoBehaviour
         if (dm.auraAmount >= auraTrigger)
         {
             //Play Animation Open Door !
-            //GetComponent<Animator>().Set
+            GetComponent<Animator>().SetTrigger("Open");
             Destroy(this.gameObject);
         }
     }
