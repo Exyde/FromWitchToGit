@@ -421,7 +421,7 @@ MonoBehaviour:
   RunKey: 304
   moveDatas: {fileID: 11400000, guid: 6ce7674be72ebb94f9d7ea548723df8d, type: 2}
   soundPlayerPrefab: {fileID: 504574616151156674, guid: 1dffd9c552f47274380e74d8cf2412bd, type: 3}
-  jumpClip: {fileID: 0}
+  jumpClip: {fileID: 8300000, guid: b64b8c4e794af084f9ccaafd669c7d56, type: 3}
   gravity: 20
   playerCamera: {fileID: 686401441425661914}
   lookSpeed: 2
@@ -485,6 +485,7 @@ MonoBehaviour:
   InstructReadyMaterial: {fileID: 2100000, guid: 1922db2073bee9142b26bb9b1e9632bc, type: 2}
   DeconstructCoolDownMaterial: {fileID: 2100000, guid: d59c407c1e16f2641bfc5b1dee7bf30e, type: 2}
   DeconstructReadyMaterial: {fileID: 2100000, guid: 056cdc9df703f0b48a13cb6f0359528b, type: 2}
+  soundPlayerPrefab: {fileID: 504574616151156674, guid: 1dffd9c552f47274380e74d8cf2412bd, type: 3}
 --- !u!114 &686401439686734161
 MonoBehaviour:
   m_ObjectHideFlags: 0

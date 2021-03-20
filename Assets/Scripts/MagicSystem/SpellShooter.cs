@@ -44,6 +44,10 @@ public class SpellShooter : MonoBehaviour
     bool deconstructReady;
     bool instructReady;
 
+    [Header("Audio")]
+    public GameObject soundPlayerPrefab;
+
+
 
     private void Start()
 	{
@@ -110,6 +114,7 @@ public class SpellShooter : MonoBehaviour
 
         }
 
+
         //Update global timer
         globalTimeToSpell = Time.time + globalCooldown;
 
@@ -126,6 +131,8 @@ public class SpellShooter : MonoBehaviour
 
         //Velocity
         spellProjectile.GetComponent<Rigidbody>().velocity = (target - firepoint.position).normalized * spell.SpellSpeed;
+        PlaySound(spell.SpellSound);
+
 
         //Randomize
         if (spell.Randomize)
@@ -172,5 +179,13 @@ public class SpellShooter : MonoBehaviour
     {
         deconstructSpellUnlocked = true;
         DeconstructSpellUI.SetActive(true);
+    }
+
+    public void PlaySound(AudioClip _clip)
+    {
+        GameObject go = Instantiate(soundPlayerPrefab);
+        AudioSource _source = go.AddComponent(typeof(AudioSource)) as AudioSource;
+        _source.clip = _clip;
+        _source.Play();
     }
 }
