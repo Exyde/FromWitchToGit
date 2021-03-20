@@ -14,6 +14,7 @@ public class VideoController : MonoBehaviour
     private void Start()
     {
         timer = (float)Player.clip.length;
+        Cursor.visible = false;
     }
 
     void Update()

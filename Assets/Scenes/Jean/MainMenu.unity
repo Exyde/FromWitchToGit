@@ -1480,6 +1480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPannel: {fileID: 2079205879}
+  dialogueCursor: {fileID: 2800000, guid: debf245053e39ba49816201072471714, type: 3}
+  showCursor: 1
 --- !u!4 &1480230697
 Transform:
   m_ObjectHideFlags: 0

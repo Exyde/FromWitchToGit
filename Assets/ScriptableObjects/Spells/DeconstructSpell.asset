@@ -25,6 +25,6 @@ MonoBehaviour:
   SpellPrefab: {fileID: 1588436372242031098, guid: c0441503e4fab7a43987563ab85e8b6b, type: 3}
   ImpactPrefab: {fileID: 6722229387674439220, guid: df8287357ac3eb546974b5e190f5c2c0, type: 3}
   MuzzlePrefab: {fileID: 0}
-  SpellSound: {fileID: 8300000, guid: 48e916c8c29c4e640a303b82f77d5815, type: 3}
+  SpellSound: {fileID: 8300000, guid: 621147ab5ed51ca469a313541aa86e6c, type: 3}
   ImpactSound: {fileID: 0}
   Voiceline: {fileID: 0}
