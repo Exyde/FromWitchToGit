@@ -1757,7 +1757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5332d9e0a868bf4bbb834653d9323e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 25279360173ceb84d8dd3e7e4af94c60, type: 3}
   replayable: 0
   cooldown: 5
 --- !u!82 &72021831
@@ -1770,8 +1770,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a2123585c36c8694e97abfbcbfaf8f3a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -39372,7 +39372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5332d9e0a868bf4bbb834653d9323e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: edd4c30d5d4630b46ae51e5be1c1f944, type: 3}
   replayable: 0
   cooldown: 5
 --- !u!82 &1783899375
@@ -39386,7 +39386,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -50430,6 +50430,14 @@ PrefabInstance:
       propertyPath: moon
       value: 
       objectReference: {fileID: 65723066}
+    - target: {fileID: 7452492776565491371, guid: 064687b0e53e871419190f221cac0283, type: 3}
+      propertyPath: clipA
+      value: 
+      objectReference: {fileID: 8300000, guid: cf486b0e8b77efc47bb82583bb7906cf, type: 3}
+    - target: {fileID: 7452492776565491371, guid: 064687b0e53e871419190f221cac0283, type: 3}
+      propertyPath: clipB
+      value: 
+      objectReference: {fileID: 8300000, guid: 9954fe4e5eadbca43a7b8bdc540cde18, type: 3}
     - target: {fileID: 7452492776565491371, guid: 064687b0e53e871419190f221cac0283, type: 3}
       propertyPath: spellPanel
       value: 
