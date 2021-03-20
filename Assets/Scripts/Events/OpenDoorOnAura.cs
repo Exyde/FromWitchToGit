@@ -17,7 +17,7 @@ public class OpenDoorOnAura : MonoBehaviour
         {
             //Play Animation Open Door !
             GetComponent<Animator>().SetTrigger("Open");
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }
