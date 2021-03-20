@@ -2706,12 +2706,13 @@ Transform:
   - {fileID: 1504126968}
   - {fileID: 618355400}
   - {fileID: 370863993}
-  - {fileID: 543450652825310610}
   - {fileID: 1729208114}
+  - {fileID: 543450652825310610}
   - {fileID: 201442011}
   - {fileID: 1124568364}
   - {fileID: 141247733}
   - {fileID: 366155289}
+  - {fileID: 1613620379}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38673,8 +38674,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613620378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.295221, y: 32.131516, z: -18.004898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -36.20408, y: 56.931515, z: -13.715031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422604713}
@@ -38682,8 +38683,8 @@ Transform:
   - {fileID: 545291548}
   - {fileID: 1337579488}
   - {fileID: 2022881132}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 130320269}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614996035
 GameObject:
@@ -40653,7 +40654,7 @@ Transform:
   - {fileID: 1337901695}
   - {fileID: 1469684350}
   m_Father: {fileID: 130320269}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739406139
 GameObject:
@@ -42826,6 +42827,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870073024}
   m_Mesh: {fileID: -7490660281293389756, guid: 489439d6c8ae3a1488621df480ca6c73, type: 3}
+--- !u!1 &1883212238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5eb56dd8aac98f46b03a182a6a25906, type: 3}
+  m_PrefabInstance: {fileID: 201442010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1883212239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883212238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.055711944, y: 0.003067651, z: 0.03471155}
+  m_Center: {x: -0.0012865773, y: -0.0012594457, z: 0.000000007412237}
 --- !u!1 &1883251781
 GameObject:
   m_ObjectHideFlags: 0
@@ -52317,7 +52336,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6982316431370151389, guid: 064687b0e53e871419190f221cac0283, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6982316431370151389, guid: 064687b0e53e871419190f221cac0283, type: 3}
       propertyPath: m_LocalPosition.x

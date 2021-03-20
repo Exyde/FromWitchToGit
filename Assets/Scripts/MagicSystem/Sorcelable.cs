@@ -37,6 +37,7 @@ public class Sorcelable : MonoBehaviour
     [Header("Audio Feedback")]
     public AudioClip[] deconstructFeedbacksAudio;
     public AudioClip[] instructFeedbacksAudio;
+    public AudioClip[] wrongSpellFeedbacksAudio;
 
 
     AudioSource audioSource;
@@ -117,7 +118,11 @@ public class Sorcelable : MonoBehaviour
                         StartCoroutine(FreeEntity());
                     }
 				}
-			}
+			} else if (deconstructHP > 0 && instructHP < MaxInstructHP)
+            {
+                audioSource.clip = wrongSpellFeedbacksAudio[Random.Range(0, wrongSpellFeedbacksAudio.Length)];
+                audioSource.Play();
+            }
         }
         else return;
 	}
