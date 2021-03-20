@@ -12923,7 +12923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.11
+      value: 6.56
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12959,7 +12959,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: speed
-      value: 5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: timeBtwAttack
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
+      propertyPath: projectileSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: localWaypoints.Array.size
