@@ -5726,7 +5726,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -12490,7 +12490,7 @@ PrefabInstance:
     - target: {fileID: 4220609488636206737, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 535391bc7e3ccfb468a9b3ddc3c7bc9c, type: 3}
+      objectReference: {fileID: 8300000, guid: 2cfad3f559d44cd4da47f31d619e09be, type: 3}
     - target: {fileID: 4220609488636206738, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
       propertyPath: m_Name
       value: VoiceLineTrigger (1)
@@ -19583,7 +19583,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7297206101700857503, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_Volume
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_RootOrder
@@ -19685,30 +19685,6 @@ PrefabInstance:
       propertyPath: MaxDeconstructHP
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: instructFeedbacksAudio.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: instructFeedbacksAudio.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 64150ae3516571c4db233fa48b9fdaf1, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 43ddbbc2be5092e42a1a90d96ab94822, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: f7dbb348802fb764ab648fd12eb7ae59, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
     - target: {fileID: 8609688260944144653, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_Name
       value: "Rejet\xE9 2"
@@ -19742,7 +19718,7 @@ PrefabInstance:
     - target: {fileID: 4220609488636206737, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: e92bf800ebd89dd44b84e563803680a9, type: 3}
+      objectReference: {fileID: 8300000, guid: c38da881cb0caad448410ded586e2396, type: 3}
     - target: {fileID: 4220609488636206738, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
       propertyPath: m_Name
       value: VoiceLineTrigger (2)
@@ -25239,10 +25215,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1578928877}
     m_Modifications:
-    - target: {fileID: 7297206101700857503, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8609688260944144644, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25287,82 +25259,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: viewRange
-      value: 17.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: projectileSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[1].z
-      value: 11.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[2].z
-      value: -6.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[3].x
-      value: -8.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[3].z
-      value: -6.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[4].x
-      value: -8.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144647, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: localWaypoints.Array.data[4].z
-      value: 2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: MaxInstructHP
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: FreeEntityPrefab
-      value: 
-      objectReference: {fileID: 6740468433621733478, guid: df3235dce4ef9bb48bcb650dbadb1749, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: MaxDeconstructHP
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: instructFeedbacksAudio.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: instructFeedbacksAudio.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 64150ae3516571c4db233fa48b9fdaf1, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 43ddbbc2be5092e42a1a90d96ab94822, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: f7dbb348802fb764ab648fd12eb7ae59, type: 3}
-    - target: {fileID: 8609688260944144648, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
-      propertyPath: deconstructFeedbacksAudio.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
     - target: {fileID: 8609688260944144653, guid: 740485a9ac9d2b2409bc7bd80b9b8c1b, type: 3}
       propertyPath: m_Name
       value: "Rejet\xE9 1"
@@ -34165,6 +34061,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb81c8b398de7884caf6df53bed3ca95, type: 3}
+--- !u!1001 &1411168582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1946821155}
+    m_Modifications:
+    - target: {fileID: 4220609488636206736, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: MaxDistance
+      value: 68.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206736, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: MinDistance
+      value: 5.4760785
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206736, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206737, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c38da881cb0caad448410ded586e2396, type: 3}
+    - target: {fileID: 4220609488636206738, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_Name
+      value: VoiceLineTrigger (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206739, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_Radius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 65.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -103.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+--- !u!4 &1411168583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4220609488636206750, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+  m_PrefabInstance: {fileID: 1411168582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1412674480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3543305061858067247, guid: 5cb208c10adfa02439e1aae52f9a2975, type: 3}
@@ -46288,7 +46266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1946821155
 Transform:
   m_ObjectHideFlags: 0
@@ -46303,6 +46281,7 @@ Transform:
   - {fileID: 1779960024}
   - {fileID: 505103859}
   - {fileID: 798172034}
+  - {fileID: 1411168583}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51048,6 +51027,10 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4220609488636206737, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9292296d09c90234087a5ab0cae213fa, type: 3}
     - target: {fileID: 4220609488636206738, guid: 1299c3ef0f495b440b908685f6ecebe2, type: 3}
       propertyPath: m_Name
       value: VoiceLineTrigger
