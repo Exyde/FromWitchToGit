@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Message 6
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: 27377fedaa2cf9e45b7567c4acb0b4ae, type: 3}
   message: "Vous avez bien raison, faites attention \xE0 vous surtout."
   responses: []

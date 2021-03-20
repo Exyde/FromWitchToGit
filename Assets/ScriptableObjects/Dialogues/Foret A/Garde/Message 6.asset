@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 6
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: 35bbeba426d8da24a817100285e646e1, type: 3}
   message: "Par le M\xE2le ! C'est terrible !\r\nAllez-y vous pouvez passer. J'esp\xE8re
     que votre fr\xE8re s'en est sorti."
   responses: []

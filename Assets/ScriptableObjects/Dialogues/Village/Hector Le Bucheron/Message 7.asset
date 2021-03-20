@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 7
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: c93d6117107609243ab38e4d2b7c10b3, type: 3}
   message: "La curiosit\xE9 va finir par vous co\xFBter cher un jour. Vous devriez
     compter sur les gardes et les hommes du village pour vous prot\xE9ger. Arr\xEAtez
     de fouiner partout."

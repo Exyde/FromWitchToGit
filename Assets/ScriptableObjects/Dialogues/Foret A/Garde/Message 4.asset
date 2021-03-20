@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 4
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: 4ecba495047c1d04da7c6d56086beb7e, type: 3}
   message: "Entendu, vous pouvez passer. Mais soyez-vigilante, certaines cr\xE9atures
     r\xF4dent autour du village."
   responses: []

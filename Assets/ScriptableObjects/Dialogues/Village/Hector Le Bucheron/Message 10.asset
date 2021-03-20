@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 10
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: 1ca71d879bfdef34fa14cffeae2596f6, type: 3}
   message: "J'en suis s\xFBr maintenant vous en \xEAtes une ! Maudite soit la lune
     !\r\n\rSale sorci\xE8re !\nGaaaaaaaaaaardes !"
   responses: []

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 1
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 376cfe16a09ea2243ade1ecb92b1f4e6, type: 3}
   message: "Halte-l\xE0 ! Qui \xEAtes-vous et que venez-vous faire ici ?"
   responses:
   - {fileID: 11400000, guid: 9c3765c33a7995c47853aa8e0e31b352, type: 2}
