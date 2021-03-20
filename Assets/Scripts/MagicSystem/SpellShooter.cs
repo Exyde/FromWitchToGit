@@ -77,12 +77,12 @@ public class SpellShooter : MonoBehaviour
             instructReady = true;
         }
 
-        if (Input.GetKey(KeyCode.Alpha1) && globalTimeToSpell < Time.time)
+        if ((Input.GetKey(KeyCode.Alpha1) || Input.GetMouseButton(0) ) && globalTimeToSpell < Time.time)
         {
             ShootSpellSO(InstructSpell, LFirePoint);
         }
 
-        if (Input.GetKey(KeyCode.Alpha2) && globalTimeToSpell < Time.time && deconstructSpellUnlocked)
+        if ((Input.GetKey(KeyCode.Alpha2) || Input.GetMouseButton(1))  && globalTimeToSpell < Time.time && deconstructSpellUnlocked)
         {
             ShootSpellSO(DeconstructSpell, RFirePoint);
         }
