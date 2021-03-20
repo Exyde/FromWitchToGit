@@ -442,6 +442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aad1cd5983457d45a0a3ea97654f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CloseEye: {fileID: 21300000, guid: 0cc2bdca9624b2540937cca449b36c39, type: 3}
+  OpenEye: {fileID: 21300000, guid: 82d90cc04a2304f49b2e1bae10306899, type: 3}
 --- !u!1 &3583996485881160867
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aad1cd5983457d45a0a3ea97654f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CloseEye: {fileID: 21300000, guid: 0cc2bdca9624b2540937cca449b36c39, type: 3}
+  OpenEye: {fileID: 21300000, guid: 82d90cc04a2304f49b2e1bae10306899, type: 3}
 --- !u!1 &5148371134128497821
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6162320587386629524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1286,6 +1290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aad1cd5983457d45a0a3ea97654f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CloseEye: {fileID: 21300000, guid: 0cc2bdca9624b2540937cca449b36c39, type: 3}
+  OpenEye: {fileID: 21300000, guid: 82d90cc04a2304f49b2e1bae10306899, type: 3}
 --- !u!1 &6162320587906629102
 GameObject:
   m_ObjectHideFlags: 0

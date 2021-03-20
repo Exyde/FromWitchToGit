@@ -47,11 +47,13 @@ public class Health : MonoBehaviour
             {
                 vignette.intensity.value = .9f;
             }
+
+            if (currentHealth == 0)
+            {
+                FindObjectOfType<GameManager>().HandleGameOver();
+            }
         }
 
-        if (currentHealth == 0)
-		{
-            FindObjectOfType<GameManager>().HandleGameOver();
-		}
+
 	}
 }
