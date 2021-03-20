@@ -17,7 +17,7 @@ public class OnTriggerVoiceLine : MonoBehaviour
 	{
 		hasPlayed = false;
 		source = GetComponent<AudioSource>();
-		//source.clip = clip;
+		source.clip = clip;
 	}
 
     private void Update()
