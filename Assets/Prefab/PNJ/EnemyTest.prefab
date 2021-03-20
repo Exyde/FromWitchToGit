@@ -422,17 +422,21 @@ MonoBehaviour:
   ChainDestructionPrefab: {fileID: 8498227463940890090, guid: b2ded6f7ba4a5e8448a30e0718f51ec4, type: 3}
   EyeOpeningPrefab: {fileID: 2567066224625686669, guid: 2117ddabc68c35d42985fe5d4f223686, type: 3}
   offset: 1.5
-  MaxDeconstructHP: 2
+  MaxDeconstructHP: 0
   deconstructHP: 0
-  MaxInstructHP: 6
+  MaxInstructHP: 3
   instructHP: 3
   instructColor: {r: 0.003921569, g: 0.92156863, b: 1, a: 255}
   FreeEntityPrefab: {fileID: 6740468433621733478, guid: df3235dce4ef9bb48bcb650dbadb1749, type: 3}
   FreeFXPrefab: {fileID: 2567066224625686669, guid: 2117ddabc68c35d42985fe5d4f223686, type: 3}
   MalveillantFXPrefab: {fileID: 667810020178563759, guid: bb1d28d8e950101408b43685471a97bf, type: 3}
   boss: 0
-  deconstructFeedbacksAudio: []
-  instructFeedbacksAudio: []
+  deconstructFeedbacksAudio:
+  - {fileID: 8300000, guid: 43ddbbc2be5092e42a1a90d96ab94822, type: 3}
+  - {fileID: 8300000, guid: f7dbb348802fb764ab648fd12eb7ae59, type: 3}
+  - {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
+  instructFeedbacksAudio:
+  - {fileID: 8300000, guid: 64150ae3516571c4db233fa48b9fdaf1, type: 3}
 --- !u!114 &8609688260944144647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,21 +451,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   localWaypoints:
   - {x: 0, y: 0, z: 0}
-  - {x: 5, y: 0, z: 10}
-  - {x: 5, y: 0, z: 0}
+  - {x: 5, y: 0, z: 11.68}
+  - {x: 5, y: 0, z: -6.79}
+  - {x: -8.41, y: 0, z: -6.79}
+  - {x: -8.41, y: 0, z: 2.3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  speed: 8
+  speed: 3
   waitTime: 1
   timeBtwAttack: 2
-  projectileSpeed: 16
+  projectileSpeed: 6
   firePoint: {fileID: 8928430301090235006}
   attackPrefab: {fileID: 1588436372242031098, guid: 79341848554098043b5b061a39484639, type: 3}
-  viewRange: 20
+  viewRange: 17.2
   attackRange: 8
   playerInView: 0
   playerInAttackRange: 0
@@ -477,7 +483,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.441
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
