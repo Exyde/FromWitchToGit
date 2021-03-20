@@ -53,7 +53,5 @@ public class Health : MonoBehaviour
                 FindObjectOfType<GameManager>().HandleGameOver();
             }
         }
-
-
 	}
 }

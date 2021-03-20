@@ -106,13 +106,16 @@ public class Sorcelable : MonoBehaviour
                 Instantiate(EyeOpeningPrefab, transform.position, Quaternion.identity);
 
                 audioSource.clip = instructFeedbacksAudio[Random.Range(0, instructFeedbacksAudio.Length)];
-                audioSource.Play();
+                if (instructHP != MaxInstructHP) audioSource.Play();
 
 
                 if (instructHP == MaxInstructHP)
 				{
                     if (boss) FindObjectOfType<GameManager>().HandleGameEnd();
-                    else StartCoroutine(FreeEntity());
+                    else
+                    {
+                        StartCoroutine(FreeEntity());
+                    }
 				}
 			}
         }
@@ -141,11 +144,15 @@ public class Sorcelable : MonoBehaviour
 
         iTween.ScaleTo(this.gameObject, iTween.Hash("x", .5, "z", .5, "y", .5));
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 
-        Instantiate(FreeEntityPrefab, transform.position, FreeEntityPrefab.transform.rotation);
+        GameObject go = Instantiate(FreeEntityPrefab, transform.position, FreeEntityPrefab.transform.rotation);
         Instantiate(FreeFXPrefab, transform.position, Quaternion.identity);
         Instantiate(MalveillantFXPrefab, transform.position, MalveillantFXPrefab.transform.rotation);
+
+        AudioSource _source =  go.AddComponent(typeof(AudioSource)) as AudioSource;
+        _source.clip = instructFeedbacksAudio[Random.Range(0, instructFeedbacksAudio.Length)];
+        _source.Play();
 
         Destroy(this.gameObject);
 	}
