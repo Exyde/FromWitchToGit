@@ -13,6 +13,10 @@ public class FPSController : MonoBehaviour
     [SerializeField]
     private MovementDatas moveDatas;
 
+    [Header("Audio")]
+    public GameObject soundPlayerPrefab;
+    public AudioClip jumpClip;
+
     [Space]
     public float gravity = 20.0f;
 
@@ -74,6 +78,10 @@ public class FPSController : MonoBehaviour
         {
             moveDirection.y = moveDatas.jumpSpeed;
             //animatorController.SetJump();
+            GameObject go = Instantiate(soundPlayerPrefab);
+            AudioSource _source = go.AddComponent(typeof(AudioSource)) as AudioSource;
+            _source.clip = jumpClip;
+            _source.Play();
         }
         else
         {

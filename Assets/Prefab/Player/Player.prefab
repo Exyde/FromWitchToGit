@@ -420,6 +420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunKey: 304
   moveDatas: {fileID: 11400000, guid: 6ce7674be72ebb94f9d7ea548723df8d, type: 2}
+  soundPlayerPrefab: {fileID: 504574616151156674, guid: 1dffd9c552f47274380e74d8cf2412bd, type: 3}
+  jumpClip: {fileID: 0}
   gravity: 20
   playerCamera: {fileID: 686401441425661914}
   lookSpeed: 2
