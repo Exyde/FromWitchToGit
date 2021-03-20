@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Message 3
   m_EditorClassIdentifier: 
   endDialogue: 0
-  clip: {fileID: 8300000, guid: 1c75c32acd371ad4994dfc23f4b3c500, type: 3}
+  clip: {fileID: 8300000, guid: 01646684b83262c4488bd4147736ca52, type: 3}
   message: "Depuis quelques jours oui, c'est tout ce qui est arriv\xE9e d'\xE9trange.
     Et c'est bien suffisant.\r\nMais pourquoi toutes ces questions ?"
   responses:

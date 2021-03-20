@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 2
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 481859214629650489cb92667f1b1728, type: 3}
   message: "Oh, bonjour.\r\nJe ne vous avais pas vue.\r\n\rVous n'\xEAtes pas d'ici
     ?\r\n\rEn tout cas, rien qui ne vous concerne. je suis dans une situation, disons,
     inextricable."

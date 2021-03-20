@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 8
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: e7be24356443df747a076393d9079ace, type: 3}
   message: "Oui, depuis quelques jours, on entend parfois des cris \xE9tranges provenant
     du fond de la for\xEAt. Ces cris me glacent le sang."
   responses:

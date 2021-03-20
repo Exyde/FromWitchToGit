@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 5
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: c7168e32f97f89b4f9698b02fec77aea, type: 3}
   message: "Vos occupations ?\r\n\rCelle d'une femme avec certains pouvoirs que vous
     essayez de cacher, ha ha !"
   responses:

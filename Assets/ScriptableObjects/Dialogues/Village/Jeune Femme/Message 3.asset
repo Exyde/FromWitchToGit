@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 3
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: f8641a48ba08945419866d8b2c6dc560, type: 3}
   message: "Des ennuis ? On peut dire cela, oui.\r\n\rPour tout vous dire, je dois
     bient\xF4t me marier mais je suis \xE9prise d'un autre."
   responses:

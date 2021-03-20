@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Last message
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: cf3982c7f52e2b845937ce25c188266b, type: 3}
   message: "Ce qui est \xE9trange, c'est que cet homme qui \xE9tait tr\xE8s heureux
     \xE0 l'id\xE9e du mariage, \xE0 subitement disparut il y a quelques jours.\r\n\r\nMais
     pour \xEAtre honn\xEAte, cela m'arrange bien."

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 2
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 59a9f4c3c8ef5e34c9c7da9e95f723fa, type: 3}
   message: Comment se fait-il que vous soyez seule ?
   responses:
   - {fileID: 11400000, guid: 6e779079f999d8e4aad08a769d8ae6fe, type: 2}

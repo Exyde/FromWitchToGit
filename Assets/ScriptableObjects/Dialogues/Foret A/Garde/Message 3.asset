@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 3
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 855a8b15587e20248b923a72acf127f9, type: 3}
   message: Une jeune femme qui voyage seule, c'est vraiment inhabituel.
   responses:
   - {fileID: 11400000, guid: c4ce04412efb30a45a16a5453bf76ffa, type: 2}
