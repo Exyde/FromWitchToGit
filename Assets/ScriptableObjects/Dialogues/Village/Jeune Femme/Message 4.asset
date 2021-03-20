@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Message 4
   m_EditorClassIdentifier: 
   endDialogue: 0
+  clip: {fileID: 8300000, guid: 57aa53ecbc7e8ad499d2bd75a937b20a, type: 3}
   message: "Oui, exactement. Je ne connais pas cet homme, ce mariage est arrang\xE9
     pour faciliter les relations entre les villages de la for\xEAt. Mais moi, je
     n'ai rien \xE0 voir avec tout cela. j'ai l'impression d'\xEAtre une ch\xE8vre
