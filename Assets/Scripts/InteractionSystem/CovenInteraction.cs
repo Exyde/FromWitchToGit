@@ -19,6 +19,7 @@ public class CovenInteraction : Interactable
     public Material updatedMoonMat;
     public Sprite updatedSpellTexture;
     public GameObject VFX;
+    public GameObject TutoPanel;
 
     public ParticleSystem cinematicExplosionVFX;
 
@@ -26,6 +27,7 @@ public class CovenInteraction : Interactable
     {
         audioSource = GetComponent<AudioSource>();
         spellShooter = FindObjectOfType<SpellShooter>();
+        TutoPanel.SetActive(false);
     }
     public override string GetDescription()
     {
@@ -52,6 +54,7 @@ public class CovenInteraction : Interactable
         yield return new WaitForSeconds(clipA.length + 1f);
 
         VFX.SetActive(true);
+        cinematicExplosionVFX.Play();
 
         //Sequence B
         audioSource.clip = clipB;
@@ -61,10 +64,11 @@ public class CovenInteraction : Interactable
         //Cinematic end
         moveDatas.canMove = moveDatas.canSpell = true;
         spellShooter.UnlockDeconstruct();
-        cinematicExplosionVFX.Play();
 
         moon.GetComponent<MeshRenderer>().material = updatedMoonMat;
         spellPanel.GetComponent<Image>().sprite = updatedSpellTexture;
+        TutoPanel.SetActive(true);
+
 
         //spellShooter.transform.LookAt(moon.gameObject.transform);
         ///spellShooter.GetComponent<Health>().currentHealth = 3;
