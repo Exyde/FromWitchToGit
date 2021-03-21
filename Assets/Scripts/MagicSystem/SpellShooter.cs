@@ -7,6 +7,8 @@ public class SpellShooter : MonoBehaviour
     //Spell 1 : Left Hand
     //Spell 2 : Right Hand
     //Spell 3 : Both Hand
+    public bool deconstructSpellUnlocked = false;
+    public bool inVillage = false;
 
     [Header ("Spell Shooter Data")]
     public Camera mainCam;
@@ -28,7 +30,6 @@ public class SpellShooter : MonoBehaviour
     public Spell DeconstructSpell;
     public Spell InstructSpell;
     public Spell LunarSpell;
-    public bool deconstructSpellUnlocked = false;
 
     [Header("Spell Feedback")]
     public GameObject DeconstructReadyFeedback;
@@ -46,6 +47,7 @@ public class SpellShooter : MonoBehaviour
 
     [Header("Audio")]
     public GameObject soundPlayerPrefab;
+    public AudioClip CantSpellClip;
 
 
 
@@ -61,6 +63,7 @@ public class SpellShooter : MonoBehaviour
 	void Update()
     {
         if (!moveDatas.canSpell) return;
+
 
         if (DeconstructSpell.TimeToFire <= Time.time && !deconstructReady)
 		{
@@ -97,6 +100,18 @@ public class SpellShooter : MonoBehaviour
 	{
         if ((spell.TimeToFire > Time.time))
         {
+            return;
+        }
+
+        if (inVillage)
+        {
+
+            //Update global timer
+            globalTimeToSpell = Time.time + globalCooldown;
+
+            //Update for firerate
+            spell.TimeToFire = Time.time + spell.Cooldown;
+            PlaySound(CantSpellClip);
             return;
         }
 

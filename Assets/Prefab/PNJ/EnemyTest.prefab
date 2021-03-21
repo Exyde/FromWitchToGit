@@ -440,9 +440,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e12263f2f8601314a8a75c88dd9dc0e1, type: 3}
   - {fileID: 8300000, guid: 974719bb1454b6042bbeee70fa680321, type: 3}
   wrongSpellFeedbacksAudio:
-  - {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
-  - {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
-  - {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
+  - {fileID: 8300000, guid: e349529b8a8240042827e33cb51cbe91, type: 3}
+  - {fileID: 8300000, guid: 1ee198f79e6d6124eb33dea6b3085611, type: 3}
+  - {fileID: 8300000, guid: 2c37bb4cc5144244a8dc8b6734c200d5, type: 3}
 --- !u!114 &8609688260944144647
 MonoBehaviour:
   m_ObjectHideFlags: 0

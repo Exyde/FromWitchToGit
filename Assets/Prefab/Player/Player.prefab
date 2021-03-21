@@ -467,6 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753584f6ffbd318408b31516511cc587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deconstructSpellUnlocked: 0
+  inVillage: 0
   mainCam: {fileID: 686401441425661914}
   LFirePoint: {fileID: 686401441195836055}
   RFirePoint: {fileID: 686401440888237778}
@@ -476,7 +478,6 @@ MonoBehaviour:
   DeconstructSpell: {fileID: 11400000, guid: b3e05cba7366c4345b5a92431ebd0515, type: 2}
   InstructSpell: {fileID: 11400000, guid: 1a29f10c960a3704c95b804d4759b8b1, type: 2}
   LunarSpell: {fileID: 11400000, guid: 1c224044d5ba8fb40b25dcb558f9a583, type: 2}
-  deconstructSpellUnlocked: 0
   DeconstructReadyFeedback: {fileID: 356278742}
   InstructReadyFeedback: {fileID: 4450465470489563275}
   InstructSpellUI: {fileID: 5250796221198237613}
@@ -486,6 +487,7 @@ MonoBehaviour:
   DeconstructCoolDownMaterial: {fileID: 2100000, guid: d59c407c1e16f2641bfc5b1dee7bf30e, type: 2}
   DeconstructReadyMaterial: {fileID: 2100000, guid: 056cdc9df703f0b48a13cb6f0359528b, type: 2}
   soundPlayerPrefab: {fileID: 504574616151156674, guid: 1dffd9c552f47274380e74d8cf2412bd, type: 3}
+  CantSpellClip: {fileID: 8300000, guid: 12beaa68e43d86e4a9eaefcb7086341d, type: 3}
 --- !u!114 &686401439686734161
 MonoBehaviour:
   m_ObjectHideFlags: 0

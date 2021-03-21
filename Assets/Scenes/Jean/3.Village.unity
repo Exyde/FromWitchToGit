@@ -16101,6 +16101,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 686401439686734160, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
+      propertyPath: inVillage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 686401439686734160, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: deconstructSpellUnlocked
       value: 0
       objectReference: {fileID: 0}
