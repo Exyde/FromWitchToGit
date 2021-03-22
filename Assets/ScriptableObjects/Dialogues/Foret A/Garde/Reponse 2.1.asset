@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361917cf8fdfcae488b2958a4e5e4627, type: 3}
   m_Name: Reponse 2.1
   m_EditorClassIdentifier: 
-  response: "En fait, je travaille pour le Seigneur Lucien et\r je dois r\xE9pondre
+  response: "En fait, je travaille pour le Saigneur Lucien et\r je dois r\xE9pondre
     \xE0 l'une de ses demandes."
   nextMessage: {fileID: 11400000, guid: 8a282fccd15205e4eabb59133268e8b7, type: 2}
   auraValue: 100
