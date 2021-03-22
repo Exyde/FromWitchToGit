@@ -65,6 +65,9 @@ public class FPSController : MonoBehaviour
         if (isRunning && (moveDirection.x != 0 || moveDirection.z != 0))
 		{
             animatorController.SetRun();
+
+
+
         }
         else if (moveDirection.x != 0 || moveDirection.z != 0)
 		{
