@@ -25972,11 +25972,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1156524080, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: immortal
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 686401439686734160, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: deconstructSpellUnlocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 686401439686734186, guid: a42eb05bafe484e4eba59d540f03ca06, type: 3}
       propertyPath: m_Name
@@ -53416,6 +53416,34 @@ PrefabInstance:
     - target: {fileID: 8779298002415411368, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.190002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: lengthInSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779298002415411369, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8779298002415411371, guid: 5487b63255364ab4a93f3cd8cd74cbbf, type: 3}
       propertyPath: m_Name

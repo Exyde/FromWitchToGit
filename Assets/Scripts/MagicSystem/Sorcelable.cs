@@ -81,7 +81,15 @@ public class Sorcelable : MonoBehaviour
                 deconstructHP--;
                 int childIndex = deconstructPanel.transform.childCount - 1;
 
-                Instantiate(ChainDestructionPrefab, transform.position, Quaternion.identity);
+                if (boss)
+                {
+                    Instantiate(ChainDestructionPrefab, transform.position + new Vector3(0, 4.5f, 0), Quaternion.identity);
+                }
+                else
+                {
+
+                    Instantiate(ChainDestructionPrefab, transform.position + new Vector3(0, .5f, 0), Quaternion.identity);
+                }
                 Destroy(deconstructPanel.transform.GetChild(childIndex).gameObject);
 
                 audioSource.clip = deconstructFeedbacksAudio[Random.Range(0, deconstructFeedbacksAudio.Length)];

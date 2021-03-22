@@ -16,7 +16,7 @@ MonoBehaviour:
   Instruct: 1
   Deconstruct: 0
   SpellSprite: {fileID: 0}
-  Cooldown: 1
+  Cooldown: 1.5
   Charges: 50
   SpellSpeed: 25
   TimeToFire: 24.406588

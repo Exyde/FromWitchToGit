@@ -2483,7 +2483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e4943cf1ec3757341bedee379f39b21f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4943cf1ec3757341bedee379f39b21f, type: 3}
@@ -3080,6 +3080,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6b312b8aa858d884fb5ac51720212b4c, type: 3}
       propertyPath: m_Name
       value: "Gar\xE7onnet"
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6b312b8aa858d884fb5ac51720212b4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b312b8aa858d884fb5ac51720212b4c, type: 3}
@@ -10022,6 +10026,10 @@ PrefabInstance:
     - target: {fileID: 7766076313944328237, guid: 86e7137a06b5fc94a99edb77783007a0, type: 3}
       propertyPath: m_Name
       value: Cube PNJ discussion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766076313944328237, guid: 86e7137a06b5fc94a99edb77783007a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86e7137a06b5fc94a99edb77783007a0, type: 3}
@@ -21175,7 +21183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.61
+      value: -19.406
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21183,11 +21191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.99
+      value: -3.274
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.95195293
+      value: 0.78529495
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalRotation.x
@@ -21195,7 +21203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.30624446
+      value: 0.6191218
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalRotation.z
@@ -21207,7 +21215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 35.666
+      value: 76.504
       objectReference: {fileID: 0}
     - target: {fileID: 4108764476327139159, guid: 96206e5935ec4144781467f68c512898, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
