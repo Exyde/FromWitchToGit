@@ -31,6 +31,11 @@ public class Cheats : MonoBehaviour
         {
             Cursor.visible = !Cursor.visible;
         }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            FindObjectOfType<SpellShooter>().UnlockDeconstruct();
+        }
     }
 
     void ToggleMovement()
