@@ -16,6 +16,7 @@ public class FPSController : MonoBehaviour
     [Header("Audio")]
     public GameObject soundPlayerPrefab;
     public AudioClip jumpClip;
+    public AudioClip[] stepClips;
 
     [Space]
     public float gravity = 20.0f;

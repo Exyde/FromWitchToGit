@@ -697,7 +697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal
+  m_Text: Quitter
 --- !u!1 &4394934902481310369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lire la suite...
+  m_Text: Continuer
 --- !u!1 &8981652276269691113
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Message 9
   m_EditorClassIdentifier: 
   endDialogue: 1
+  clip: {fileID: 8300000, guid: cc4ba8a5e6ad51f40898473aee973a32, type: 3}
   message: "Vous vexez pas je plaisantais. Je ne vais pas vous d\xE9noncer."
   responses: []

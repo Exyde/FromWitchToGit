@@ -20,7 +20,7 @@ public class BucheronGameOver : MonoBehaviour
         {
             triggered = true;
             gm.HandleBucheronGameOver();
-            Destroy(this.GetComponent<AudioSource>());
+            //Destroy(this.GetComponent<AudioSource>());
         } 
     }
 }

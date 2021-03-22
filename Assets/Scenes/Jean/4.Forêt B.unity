@@ -53498,6 +53498,10 @@ PrefabInstance:
       propertyPath: deconstructFeedbacksAudio.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: 6c5ec820f6dc87248a2a0f7f98d5230f, type: 3}
+    - target: {fileID: 3447396006066422262, guid: e8cbd678774889f46b9cda5d44d7e1d1, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3891912072396131621, guid: e8cbd678774889f46b9cda5d44d7e1d1, type: 3}
       propertyPath: m_IsActive
       value: 1

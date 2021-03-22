@@ -44,7 +44,26 @@ public class GameManager : MonoBehaviour
 
     IEnumerator WaitAndGameOver()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4f);
+
+        Color objColor = BlackPanel.GetComponent<Image>().color;
+        float fadeAmount;
+        float fadeSpeed = 2;
+        bool fadeToBlack = true;
+
+        if (fadeToBlack)
+        {
+            while (BlackPanel.GetComponent<Image>().color.a < 1)
+            {
+                fadeAmount = objColor.a + (fadeSpeed * Time.deltaTime);
+
+                objColor = new Color(objColor.r, objColor.g, objColor.b, fadeAmount);
+                BlackPanel.GetComponent<Image>().color = objColor;
+                yield return null;
+            }
+        }
+
+        yield return new WaitForSeconds(1f);
         HandleGameOver();
     }
 

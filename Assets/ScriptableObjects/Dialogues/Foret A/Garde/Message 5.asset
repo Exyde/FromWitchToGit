@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endDialogue: 1
   clip: {fileID: 8300000, guid: d5167126e19d18a4f85832cf9bedfd7b, type: 3}
-  message: "Je vois que le Saigneur a bon go\xFBt ! Vous pouvez passer."
+  message: "Je vois que le Seigneur a bon go\xFBt ! Vous pouvez passer."
   responses: []
