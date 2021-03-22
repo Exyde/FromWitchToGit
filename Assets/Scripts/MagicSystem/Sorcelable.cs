@@ -112,11 +112,11 @@ public class Sorcelable : MonoBehaviour
 
                 if (instructHP == MaxInstructHP)
 				{
-                    if (boss) FindObjectOfType<GameManager>().HandleGameEnd();
-                    else
-                    {
+                    //if (boss) FindObjectOfType<GameManager>().HandleGameEnd();
+                    //else
+                    //{
                         StartCoroutine(FreeEntity());
-                    }
+                    //}
 				}
 			} else if (deconstructHP > 0 && instructHP < MaxInstructHP)
             {

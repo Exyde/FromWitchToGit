@@ -447,6 +447,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1207081413425111569}
   - component: {fileID: 1678386199222502908}
+  - component: {fileID: 3734938203298532023}
+  - component: {fileID: 4673218705205592343}
   m_Layer: 0
   m_Name: "M\xE2laim\xE9KO"
   m_TagString: Untagged
@@ -487,6 +489,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3734938203298532023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984885166759114923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7e80203857b674b9695212ff3569d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionType: 0
+  examined: 0
+--- !u!65 &4673218705205592343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984885166759114923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4403305, y: 0.43739223, z: 1.8655624}
+  m_Center: {x: -0.12178421, y: 0.26909828, z: 0.43278122}
 --- !u!1 &2156472117785509291
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject GameOverCanvas;
     public GameObject GameWinCanvas;
+    public GameObject BlackPanel;
 
     public Text GameOverText;
 
@@ -63,11 +64,32 @@ public class GameManager : MonoBehaviour
         //Fade screen to black, play music, display text.
         //Coroutines
         //Disable loose canvas aswell ?
-        GameWinCanvas.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        moveDatas.canMove = moveDatas.canSpell = false;
-        FindObjectOfType<BossAI>().gameObject.SetActive(false);
+        StartCoroutine(FadeToColor());
+    }
 
+    IEnumerator FadeToColor(bool fadeToBlack = true, int fadeSpeed = 5)
+    {
+        Color objColor = BlackPanel.GetComponent<Image>().color;
+        float fadeAmount;
+
+        if (fadeToBlack)
+        {
+            while (BlackPanel.GetComponent<Image>().color.a < 1)
+            {
+                fadeAmount = objColor.a + (fadeSpeed * Time.deltaTime);
+
+                objColor = new Color(objColor.r, objColor.g, objColor.b, fadeAmount);
+                BlackPanel.GetComponent<Image>().color = objColor;
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(1f);
+
+            GameWinCanvas.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            moveDatas.canMove = moveDatas.canSpell = false;
+            FindObjectOfType<BossAI>().gameObject.SetActive(false);
+        }
     }
 }
