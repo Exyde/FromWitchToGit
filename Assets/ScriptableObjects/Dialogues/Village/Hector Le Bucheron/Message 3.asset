@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endDialogue: 0
   clip: {fileID: 8300000, guid: 01646684b83262c4488bd4147736ca52, type: 3}
-  message: "Depuis quelques jours oui, c'est tout ce qui est arriv\xE9e d'\xE9trange.
+  message: "Depuis quelques jours oui, c'est tout ce qui est arriv\xE9 d'\xE9trange.
     Et c'est bien suffisant.\r\nMais pourquoi toutes ces questions ?"
   responses:
   - {fileID: 11400000, guid: d232fa3864bfb9c468d1bf662795ab20, type: 2}

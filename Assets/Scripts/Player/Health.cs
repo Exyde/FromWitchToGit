@@ -15,7 +15,8 @@ public class Health : MonoBehaviour
     public bool immortal = false;
     Volume volume;
     Vignette vignette;
-    
+
+    public AudioClip playerHit;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
 		{
             currentHealth--;
+
             HealthBar.GetChild(currentHealth).gameObject.GetComponent<MeshRenderer>().material = EmptyMoonMaterials[currentHealth];
 
             if (currentHealth == 2)

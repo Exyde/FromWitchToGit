@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endDialogue: 0
   clip: {fileID: 8300000, guid: 941e1171549a37e438c407a6502432a2, type: 3}
-  message: Hum... une femme toute seule de nos jours c'est bien rare...
+  message: Hum... Une femme toute seule de nos jours c'est bien rare...
   responses:
   - {fileID: 11400000, guid: 31a48d43895a6a24fadc4afffbe0d189, type: 2}
   - {fileID: 11400000, guid: cc3b543b745473447819aec6383f8d90, type: 2}

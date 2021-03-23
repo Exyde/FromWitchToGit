@@ -16,6 +16,6 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: 42b908837e4dbae4a8c08b7d05351dd5, type: 3}
   message: "Vous voulez parler de ces cris qu'on entends dans la for\xEAt j'imagine
     ?\r\nIls me glacent le sang \xE0 chaque fois que je les entends.\r\n\rIls proviennent
-    du fond de la for\xEAt"
+    du fond de la for\xEAt..."
   responses:
   - {fileID: 11400000, guid: de7d947183a6e13489b443cea62c3a50, type: 2}
