@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1127645585493101037}
   - component: {fileID: 2901097604547509543}
   m_Layer: 0
-  m_Name: PalissadeAffiche
+  m_Name: Affiche Eglise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
