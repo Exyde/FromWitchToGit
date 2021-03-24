@@ -42533,7 +42533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161b445fd7503004aac757ca6d87085d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: edd4c30d5d4630b46ae51e5be1c1f944, type: 3}
+  clip: {fileID: 8300000, guid: f59224963e98cb247a5684fc2e44de9a, type: 3}
   CovenVFX: {fileID: 856183048}
   TextCanvas: {fileID: 1126002734}
 --- !u!1001 &1791731720
@@ -44110,7 +44110,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
