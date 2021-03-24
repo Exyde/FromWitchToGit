@@ -54,7 +54,7 @@ public class DialogueManager : Interactable
 	public override string GetDescription()
     {
         if (isTalking) return "";
-        return "Parler a " + npcName;
+        return "Parler à " + npcName;
     }
 
 	public override void Interact()
