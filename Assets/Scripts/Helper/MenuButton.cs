@@ -12,9 +12,13 @@ public class MenuButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     Image image;
 
+     AudioClip clickSound;
+     AudioSource _source;
+
 
     private void Start()
     {
+        _source = GetComponent<AudioSource>();
         Color c = GetComponentInChildren<Text>().color;
         c.a = .7f;
         GetComponentInChildren<Text>().color = c;
@@ -25,6 +29,7 @@ public class MenuButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         //Play sound
+        _source.Play();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -34,6 +39,8 @@ public class MenuButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
         GetComponentInChildren<Text>().color = c;
         image.sprite = OpenEye;
+        _source.Play();
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
