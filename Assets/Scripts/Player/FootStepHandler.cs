@@ -30,8 +30,7 @@ public class FootStepHandler : MonoBehaviour
                 _source.clip = clips[Random.Range(0, clips.Length)];
                 _source.Play();
                 Invoke("ChangeStep", waitTimeR);
-                print("ouesh");
-            }
+            }   
             else
             {
                 _source.clip = clips[Random.Range(0, clips.Length)];
@@ -39,7 +38,6 @@ public class FootStepHandler : MonoBehaviour
                 Invoke("ChangeStep", waitTime);
             }
             //Invoke("FootStep", 0);
-            Debug.Log("Steped");
         }
     }
 
@@ -52,7 +50,6 @@ public class FootStepHandler : MonoBehaviour
             _source.clip = clips[Random.Range(0, clips.Length)];
             _source.Play();
             Invoke("ChangeStep", waitTimeR);
-            print("ouesh");
         } else
         {
             _source.clip = clips[Random.Range(0, clips.Length)];

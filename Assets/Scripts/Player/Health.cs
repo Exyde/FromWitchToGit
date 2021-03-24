@@ -16,7 +16,8 @@ public class Health : MonoBehaviour
     Volume volume;
     Vignette vignette;
 
-    public AudioClip playerHit;
+    public GameObject soundPlayerPrefab;
+    public AudioClip playerHitClip;
 
     void Start()
     {
@@ -37,6 +38,12 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
 		{
             currentHealth--;
+
+            //Sound
+            GameObject go = Instantiate(soundPlayerPrefab);
+            AudioSource _source = go.AddComponent(typeof(AudioSource)) as AudioSource;
+            _source.clip = playerHitClip;
+            _source.Play();
 
             HealthBar.GetChild(currentHealth).gameObject.GetComponent<MeshRenderer>().material = EmptyMoonMaterials[currentHealth];
 

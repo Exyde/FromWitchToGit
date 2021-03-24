@@ -553,6 +553,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: fb22648162cf3ea40aea659695fbdf4e, type: 2}
   - {fileID: 2100000, guid: f4891529979bb5e469ea164f0e4b94f3, type: 2}
   immortal: 0
+  soundPlayerPrefab: {fileID: 504574616151156674, guid: 1dffd9c552f47274380e74d8cf2412bd, type: 3}
+  playerHitClip: {fileID: 8300000, guid: f9b49e9114db86d4c8cc47ad52e33395, type: 3}
 --- !u!114 &3819646927544882552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +581,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
