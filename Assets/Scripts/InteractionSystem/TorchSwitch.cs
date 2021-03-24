@@ -8,14 +8,18 @@ public class TorchSwitch : Interactable
     public GameObject Flame;
     public bool isOn;
 
+    AudioSource _source;
+
     void Start()
     {
+        _source = GetComponent<AudioSource>();
         ToggleLight();
     }
     
     void ToggleLight()
 	{
         m_light.enabled = isOn;
+        _source.enabled = isOn;
         Flame.SetActive(isOn);
 	}
 
