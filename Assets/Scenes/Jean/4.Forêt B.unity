@@ -3682,8 +3682,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cassandre : Bievneue ch\xE8re consoeur. Nous allons te transmettre un
-    nouveau pouvoir..."
+  m_Text: "Sophie : Bievneue ch\xE8re consoeur. Nous allons te transmettre un nouveau
+    pouvoir..."
 --- !u!222 &151947899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29333,7 +29333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cassandre : Tu croiseras sur ton chemin des \xEAtres prisonniers de leurs
+  m_Text: "Sophie : Tu croiseras sur ton chemin des \xEAtres prisonniers de leurs
     pens\xE9es... Gr\xE2ce \xE0 ce nouveau sort, tu pourras \xE9veiller tous les
     esprits, m\xEAme les plus tenaces ! Puisse-t-il t'aider \xE0 vaincre les alli\xE9s
     du M\xE2le !"

@@ -201,6 +201,7 @@ public class SpellShooter : MonoBehaviour
         GameObject go = Instantiate(soundPlayerPrefab);
         AudioSource _source = go.AddComponent(typeof(AudioSource)) as AudioSource;
         _source.clip = _clip;
+        _source.volume = .1f;
         _source.Play();
     }
 }
