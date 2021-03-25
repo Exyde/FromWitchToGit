@@ -36,6 +36,12 @@ public class Cheats : MonoBehaviour
         {
             FindObjectOfType<SpellShooter>().UnlockDeconstruct();
         }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            bool _immortal = FindObjectOfType<Health>().immortal;
+            FindObjectOfType<Health>().immortal = !_immortal;
+        }
     }
 
     void ToggleMovement()
