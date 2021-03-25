@@ -21636,6 +21636,7 @@ GameObject:
   - component: {fileID: 168495203}
   - component: {fileID: 168495202}
   - component: {fileID: 2615430287413276705}
+  - component: {fileID: 2615430287413276706}
   m_Layer: 0
   m_Name: poulecursed
   m_TagString: Untagged
@@ -21739,6 +21740,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2615430287413276706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615430287413276704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2226728f55a9c41a62756c819fb2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &2615430287413276718
 Rigidbody:
   m_ObjectHideFlags: 0

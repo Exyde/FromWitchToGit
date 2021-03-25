@@ -21,6 +21,10 @@ public class CovenInteraction : Interactable
     public GameObject VFX;
     public GameObject TutoPanel;
 
+    public GameObject SousTitreA;
+    public GameObject SousTitreB;
+
+
     public ParticleSystem cinematicExplosionVFX;
 
     private void Start()
@@ -28,6 +32,10 @@ public class CovenInteraction : Interactable
         audioSource = GetComponent<AudioSource>();
         spellShooter = FindObjectOfType<SpellShooter>();
         TutoPanel.SetActive(false);
+
+        SousTitreA.SetActive(false);
+        SousTitreB.SetActive(false);
+
     }
     public override string GetDescription()
     {
@@ -51,7 +59,9 @@ public class CovenInteraction : Interactable
         //Sequence A
         audioSource.clip = clipA;
         audioSource.Play();
-        yield return new WaitForSeconds(clipA.length + 1f);
+        SousTitreA.SetActive(true);
+        yield return new WaitForSeconds(clipA.length + .5f);
+        SousTitreA.SetActive(false);
 
         VFX.SetActive(true);
         cinematicExplosionVFX.Play();
@@ -59,7 +69,10 @@ public class CovenInteraction : Interactable
         //Sequence B
         audioSource.clip = clipB;
         audioSource.Play();
-        yield return new WaitForSeconds(clipB.length + 1f);
+        SousTitreB.SetActive(true);
+        yield return new WaitForSeconds(clipB.length + .5f);
+        SousTitreB.SetActive(false);
+
 
         //Cinematic end
         moveDatas.canMove = moveDatas.canSpell = true;
