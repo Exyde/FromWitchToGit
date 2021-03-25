@@ -433,7 +433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ayant eut une prise conscience, le jeune homme lib\xE9r\xE9 commen\xE7a
+  m_Text: "Ayant eu une prise de conscience, le jeune homme lib\xE9r\xE9 commen\xE7a
     un long processus de remise en question sur la r\xE9alit\xE9 qui l\u2019entoure..."
 --- !u!1 &3139969388776814163
 GameObject:
@@ -1119,7 +1119,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Apr\xE8s avoir permis la lib\xE9ration du M\xE2le-Aim\xE9, la jeune femme
-    continua de lutter et parti \xE0 la recherche des sorci\xE8res du Coven."
+    continua de lutter et partit \xE0 la recherche des sorci\xE8res du Coven."
 --- !u!1 &6078902355309740223
 GameObject:
   m_ObjectHideFlags: 0

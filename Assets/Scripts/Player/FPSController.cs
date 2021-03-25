@@ -85,6 +85,7 @@ public class FPSController : MonoBehaviour
             GameObject go = Instantiate(soundPlayerPrefab);
             AudioSource _source = go.AddComponent(typeof(AudioSource)) as AudioSource;
             _source.clip = jumpClip;
+            _source.volume = .1f;
             _source.Play();
         }
         else
