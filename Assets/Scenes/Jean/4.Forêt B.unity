@@ -3682,8 +3682,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sophie : Bievneue ch\xE8re consoeur. Nous allons te transmettre un nouveau
-    pouvoir..."
+  m_Text: "Sophie : Bienvenue ch\xE8re cons\u0153ur. Nous allons te transmettre un
+    nouveau pouvoir..."
 --- !u!222 &151947899
 CanvasRenderer:
   m_ObjectHideFlags: 0
